@@ -100,6 +100,7 @@ header {
 
 .header__search{
     margin: auto;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -160,12 +161,133 @@ header {
 }
 
 /* CAROUSEL  */
+.carousel {
+    background-image: url(../img/logo.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel__content h1 {
+    font-size: 3.5rem;
+}
+
+.carousel__content p {
+    font-size: 1.1rem;
+    padding: 23px 0;
+}
+
 
 /* INTRO  */
 
+/* PRODUCT  */
+.product {
+    background-color: white;
+    padding: 70px 0;
+}
+
+.product h2 {
+    color: #4e2a84;
+}
+
+.product__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product__item img {
+    width: 100%;
+    display: block;
+}
+
+.product__item {
+    position: relative;
+}
+
+.product__item h3 {
+    font-size: 1.3rem;
+}
+
+.product__item p {
+    font-size: 0.875rem;
+    line-height: 28px;
+}
+
+.product__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0e83;
+    color: white;
+    width: 100%;
+    padding: 30px;
+    opacity: 1;
+    transition: all .5s;
+}
+
+.product__detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 85px 40px;
+    /* display: flex;    vi du
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px; */
+    opacity: 0;
+    transition: all .5s;
+}
+
+.product__item:hover .product__title {
+    opacity: 0;
+}
+
+.product__item:hover .product__detail {
+    opacity: 1;
+}
+
+.product__detail h3 {
+    color: #ff0e83;
+}
+
+.product__detail p:first-of-type {
+    padding: 8px 0;
+}
+
+.product__detail p:last-of-type {
+    margin-bottom: 24px;
+}
+
+.product__social i {
+    width: 37px;
+    height: 37px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    line-height: 37px;
+    margin: 0 5px;
+    transition: all .5s;
+}
+
+.product__social i:hover {
+    color: #ff0e83;
+    border-color: #ff0e83;
+}
+
 /* NUMBER  */
 .number {
-    padding: 70px 0;
+    padding: 0 0 5rem;
 }
 
 .number__content {
@@ -192,8 +314,6 @@ header {
 /* SERVICE  */
 
 /* GALLERY */
-
-/* TEAM  */
 
 /* FEED BACK  */
 .feedback {
