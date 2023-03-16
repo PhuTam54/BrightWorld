@@ -136,10 +136,10 @@ header {
     background-color: #ff0e83;
     border: none;
     height: 3rem;
-   /* width: 1rem;*/
+   /* width: 1rem; */
     margin-top: 1rem;
     border-radius: 0 5px 5px 0;
-    /* border: 1px solid #4e2a84; */
+    /* border-bottom: 1px solid #ff0e83; */
     justify-content: center;
 }
 
@@ -147,7 +147,7 @@ header {
     font-size: 1.5rem;
     color: white;
     height: 3rem;
-    margin: auto;
+    margin: 1px;
 }
 
 .header__search i {
