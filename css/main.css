@@ -51,13 +51,16 @@ header {
 .header__content {
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.header__content .name {
+    color: #4e2a84;
 }
 
 .header__content ul {
     list-style: none;
-    margin-left: 50rem;
 }
 
 .header__content ul li {
@@ -102,7 +105,7 @@ header {
     margin: auto;
     margin-bottom: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 5rem;
 }
@@ -110,22 +113,20 @@ header {
 .header__search p{
     text-align: center;
     font-size: 2.3rem;
-    /* margin-left: 1rem; */
+    margin-left: 3rem;
 }
 
 .header__search input{
-    height: 3rem;
-    width: 48rem;
+    width: 50rem;
     margin-top: 1rem;
     padding: 10px;
     border-radius: 5px 0 0 5px;
     border: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .header__search input:focus {
     outline: none;
-    /* box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25); */
 }
 
 .search{
@@ -134,19 +135,24 @@ header {
 
 .header__search button {
     background-color: #ff0e83;
-    border: none;
     height: 3rem;
-    width: 1rem;
     margin-top: 1rem;
     border-radius: 0 5px 5px 0;
-    /* border: 1px solid #4e2a84; */
-    justify-content: center;
+    border: 2px solid white;
+}
+
+.header__search button:hover {
+    background-color: #212529;
 }
 
 .header__search button i {
-    font-size: 1.5rem;
-    color: white;
-    height: 3rem;
+    margin: auto;
+}
+
+.header__search .cart i:hover {
+    color: #ff0e83;
+    transition: all .5s;
+
 }
 
 .header__search i {
@@ -164,7 +170,7 @@ header {
 .carousel {
     background-image: url(../img/logo.jpg);
     height: 600px;
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     color: white;
     text-align: center;
@@ -182,7 +188,6 @@ header {
     padding: 23px 0;
 }
 
-
 /* INTRO  */
 
 /* PRODUCT  */
@@ -197,9 +202,9 @@ header {
 
 .product__content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px 30px;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -316,18 +321,18 @@ header {
 /* GALLERY */
 
 /* FEED BACK  */
-.feedback {
+.testimonials {
     /* background-image: url(../img/cc1.jpg); */
     background-color: #4e2a84;
     background-size: cover;
     padding: 70px 0;
 }
 
-.feedback h2 {
+.testimonials h2 {
     color: white;
 }
 
-.feedback__content {
+.testimonials__content {
     width: 70%;
     margin: 0 auto;
     border: 3px solid #4e2a84;
@@ -336,13 +341,13 @@ header {
     padding: 32px;
 }
 
-.feedback__content i {
+.testimonials__content i {
     font-size: 1.3rem;
     color: #2cbeff;
     padding: 0 18px;
 }
 
-.feedback__content p:last-of-type {
+.testimonials__content p:last-of-type {
     color: white;
     line-height: 30px;
     letter-spacing: 1.3px;
