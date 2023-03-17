@@ -244,7 +244,7 @@ header {
 
 .product__name{
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
     line-height: 1.8rem;
     height: 3.6rem;
@@ -298,7 +298,7 @@ header {
 
 .product__action-rating{
     font-size: .8rem;
-    color: #524c4c;
+    color: #d1c8c8;
     margin-left: auto;
 }
 
@@ -334,7 +334,7 @@ header {
 .product__action-sold{
     font-size: 1.1rem;
     margin-left: 6px;
-    color: white;
+    color: #d1c8c8;
 }
 
 .product__origin{
@@ -342,7 +342,7 @@ header {
     justify-content: space-between;
     margin: 8px 10px 4px;
     font-weight: 300;
-    color: white;
+    color: #d1c8c8;
 }
 
 .product__origin-brand{
