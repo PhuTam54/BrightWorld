@@ -222,7 +222,7 @@ header {
 .product h3:last-of-type{
     font-size: 1.7rem;
     color: #4e2a84;
-    margin: 4rem 5rem 1rem;
+    margin: 2rem 5rem 1rem;
 }
 
 .product__content{
@@ -231,21 +231,21 @@ header {
 
 .product__item{
     position: relative;
-    background-color: white;
+    background-color: #4e2a84;
     border: 1px solid #d5d5d5;
 }
 
 .product__img {
     padding-top: 100%;
     background-repeat: no-repeat;
-    background-color: #ff0e83;
+    background-color: #4e2a84;
     background-size: contain;
 }
 
 .product__name{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    color:;
+    color: white;
     line-height: 1.8rem;
     height: 3.6rem;
     margin: 10px 10px 6px;
@@ -265,21 +265,21 @@ header {
 }
 
 .product__price-old {
-    font-size: 1.3rem;
-    color: #666;
+    font-size: 1.2rem;
+    color: #d1c8c8;
     text-decoration: line-through;
     margin-right: 6px;
 }
 
 .product__price-new {
     font-size: 1.5rem;
-    color: #ed0a0a;
+    color: #ff84bf;
 }
 
 .product__action{
     display: flex;
     justify-content: space-between;
-    margin: 8px 10px 0;
+    margin: 15px 10px 0;
     align-items: center;
 }
 
@@ -288,31 +288,32 @@ header {
 }
 
 .product__action-like .emty{
-    display: none;
+    color: #ff0e83;
 }
 
 .product__action-like .fill {
-    color: #ed0a0a;
+    display: none;
+    color: #ff0e83;
 }
 
 .product__action-rating{
     font-size: .8rem;
-    color: #d5d5d5;
+    color: #524c4c;
     margin-left: auto;
 }
 
 .product__action-rating .gold-star{
-    color: #ffce3e;
+    color: #fdce3f;
 }
 
 .product__favourite{
     position: absolute;
     top: 10px;
-    left: -4px;
+    left: -8px;
     color: white;
-    background-color: #ed0a0a;
+    background-color: #ff0e83;
     font-size: 0.9rem;
-    line-height: 1rem;
+    line-height: 1.4rem;
     padding-right: 4px;
     border-radius: 0 3px 3px 0;
 }
@@ -322,7 +323,7 @@ header {
     position: absolute;
     left: 0px;
     bottom: -6px;
-    border-top: 7px solid #9f1313;
+    border-top: 7px solid #ca5454;
     border-left: 7px solid transparent;
 }
 
@@ -333,6 +334,7 @@ header {
 .product__action-sold{
     font-size: 1.1rem;
     margin-left: 6px;
+    color: white;
 }
 
 .product__origin{
@@ -340,6 +342,7 @@ header {
     justify-content: space-between;
     margin: 8px 10px 4px;
     font-weight: 300;
+    color: white;
 }
 
 .product__origin-brand{
