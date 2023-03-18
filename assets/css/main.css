@@ -175,28 +175,29 @@ header {
 }
 
 /* CAROUSEL  */
-.carousel .item1 {
-    background: url(/assets/img/crs3.jpg) top center / cover no-repeat;
+.carousel .item1,
+.carousel .item2,
+.carousel .item3,
+.carousel .item4
+ {
     margin-top: 128px;
     padding-top: 41%;
 }
 
+.carousel .item1 {
+    background: url(../img/crs3.jpg) top center / cover no-repeat;    
+}
+
 .carousel .item2 {
-    background: url(/assets/img/crs2.jpeg) top center / cover no-repeat;
-    margin-top: 128px;
-    padding-top: 40%;
+    background: url(../img/crs2.jpeg) top center / cover no-repeat;
 }
 
 .carousel .item3 {
-    background: url(/assets/img/crs1.jfif) top center / cover no-repeat;
-    margin-top: 128px;
-    padding-top: 40%;
+    background: url(../img/crs1.jfif) top center / cover no-repeat;
 }
 
 .carousel .item4 {
-    background: url(/assets/img/crs4.jpg) top center / cover no-repeat;
-    margin-top: 128px;
-    padding-top: 40%;
+    background: url(../img/crs4.jpg) top center / cover no-repeat;
 }
 
 .owl-nav,
