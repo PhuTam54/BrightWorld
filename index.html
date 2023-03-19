@@ -50,33 +50,63 @@
             </div>
             <div class="header__search">
                 <div class="header__logo" style="background-image: url(assets/img/logo.png);">
-                    <p><span>.</span> BrightWorld</p>
+                    <p><span>.</span> Bright<span>World</span></p>
                 </div>
-                <div class="search">
+                <div class="header__search">
                     <input type="text" placeholder="Search here">
                     <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                     </button>
                 </div>
-                <div class="cart">
-                    <i class="fa-solid fa-cart-shopping"></i><a href="#"></a>
+                <div class="header__cart">
+                    <a href="#" class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <div class="cart-list empty-cart">
+                        <img src="assets/img/empty-cart.png" alt="" class="empty-cart-img">
+                        <span class="empty-cart-msg">No product</span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- CAROUSEL -->
-    <section class="carousel">
+    <section class="carousel gallery">
         <div class="carousel__content">
             <div class="owl-carousel owl-theme">
-                <div class="item1">
-                </div>
-                <div class="item2">
-                </div>
-                <div class="item3">
-                </div>
-                <div class="item4">
-                </div>
+                <figure class="gallery__item">
+                    <div class="item1">
+                        <figcaption class="gallery__overlay">
+                            <h3><span>Bright</span>World</h3>
+                            <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="gallery__item">
+                    <div class="item2">
+                        <figcaption class="gallery__overlay">
+                            <h3><span>Bright</span>World</h3>
+                            <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="gallery__item">
+                    <div class="item3">
+                        <figcaption class="gallery__overlay">
+                            <h3><span>Bright</span>World</h3>
+                            <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="gallery__item">
+                    <div class="item4">
+                        <figcaption class="gallery__overlay">
+                            <h3><span>Bright</span>World</h3>
+                            <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                        </figcaption>
+                    </div>
+                </figure>
             </div>
         </div>
     </section>
