@@ -24,14 +24,13 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
-    <!-- MAIN CSS  -->
+    <!-- BASE, MAIN CSS  -->
+    <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/js/main.js">
 
 </head>
 
 <body>
-
     <!-- HEADER  -->
     <header>
         <div class="header__contain">
@@ -39,9 +38,9 @@
                 <div class="name">PhuTam</div>
                 <nav>
                     <ul>
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Feedback</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="#">Brand</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><i class="fa-solid fa-user"></i> <a href="#">Login</a></li>
@@ -54,14 +53,18 @@
                 </div>
                 <div class="header__search">
                     <input type="text" placeholder="Search here">
-                    <button>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </button>
+                    <a href="product.html">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </a>
                 </div>
                 <div class="header__cart">
                     <a href="#" class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
+                    <span class="cart-number">0</span>
+                    <!-- Emty cart: class= "empty-cart"-->
                     <div class="cart-list empty-cart">
                         <img src="assets/img/empty-cart.png" alt="" class="empty-cart-img">
                         <span class="empty-cart-msg">No product</span>
@@ -388,7 +391,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+        </div>
         </a>
         <h3>JUST FOR YOU</h3>
         <div class="product__content">
@@ -664,7 +667,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+        </div>
         </a>
         <h3>NEW PRODUCTS</h3>
         <div class="product__content">
@@ -1038,7 +1041,7 @@
         <div class="footer__main">
             <div class="footer__item">
                 <h3>About Us</h3>
-                <p>BrightWorld is a store that sells the world's top quality LED lights.</p>
+                <p>BrightWorld is a store that sells the world's top-quality LED lights.</p>
                 <blockquote>"Your satisfaction is our pleasure"</blockquote>
                 <div class="footer__social">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -1093,7 +1096,7 @@
             </div>
         </div>
         <div class="footer__coppyright">
-            <p>&copy; Copyright belongs to group 1 | Design by <span>Phú Tâm</span></p>
+            <p>&copy; Copyright belongs to group 1 "The Time Boys" | Design by <span>Phú Tâm</span></p>
         </div>
     </footer>
 
@@ -1133,6 +1136,9 @@
             }
         })
     </script>
+
+    <!-- MAIN JS  -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
