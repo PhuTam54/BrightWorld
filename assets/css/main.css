@@ -223,7 +223,7 @@ header {
 }
 
 .carousel .item1 {
-    background: url(../img/crs5.jpg) top center / cover no-repeat;    
+    background: url(/assets/img/crs5.jpg) top center / cover no-repeat;    
 }
 
 .carousel .item2 {
