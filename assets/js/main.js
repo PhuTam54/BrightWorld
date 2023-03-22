@@ -1,3 +1,4 @@
+// VALIDATION FORM FIELDS
 const usernameEl = document.querySelector('#username')
 const firstnameEl = document.querySelector('#firstname')
 const lastnameEl = document.querySelector('#lastname')
@@ -190,7 +191,7 @@ form.addEventListener('submit', function (e) {
 
     // submit to the server if the form is valid
     if (isContactValid) {
-        alert('Your info was send')
+        alert('Your info was send');
     }
 })
 

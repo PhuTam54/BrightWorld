@@ -259,7 +259,7 @@ header {
 .product h3 {
     font-size: 1.7rem;
     color: var(--purple-color);
-    margin: 1rem 5rem 1.5rem;
+    margin: 3rem 5rem 1.5rem;
 }
 
 .product__content {}
@@ -486,6 +486,44 @@ header {
 }
 
 /* PRODUCT IN PRODUCT */
+.orderby {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+.orderby__label {
+    color: var(--purple-color);
+    margin-right: 16px;
+}
+
+.orderby button {
+    margin-right: 12px;
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.orderby button:hover,
+.orderby .active{
+    background-color: var(--pink-color);
+    color: white;
+    border: 2px solid white;
+    padding: 13px 32px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+
+.orderby__paginate{
+    display: flex;
+    margin-left: auto;
+}
+
 .product__container {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -525,6 +563,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px 30px;
+    padding: 25px 0 0;
 }
 
 /* NUMBER  */
@@ -552,8 +591,6 @@ header {
     letter-spacing: 4px;
     padding: 24px;
 }
-
-/* SERVICE  */
 
 /* GALLERY */
 .gallery__item {
@@ -621,7 +658,6 @@ header {
 
 /* FEED BACK  */
 .testimonials {
-    /* background-image: url(../img/cc1.jpg); */
     background-color: var(--purple-color);
     background-size: cover;
     padding: 70px 0;
@@ -712,8 +748,6 @@ header {
 .contact__form input {
     width: 100%;
 }
-
-.contact__form .form-field {}
 
 .contact__info {
     display: flex;
