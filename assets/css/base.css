@@ -52,8 +52,52 @@ h2 {
 
 /* SELECT INPUT */
 .select__input {
+    position: relative;
+    width: 150px;
     background-color: white;
+    padding: 13px 25px;
     color: black;
+    cursor: default;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select__input:hover .select__option{
+    display: block;
+}
+
+.select__option {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45px ;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 4px 18px;
+    z-index: 1;
+    display: none;
+    animation: fadeInGrowth linear .2s;
+    --fadeInGrowth-from: 0.8;
+    --fadeInGrowth-to: 1;
+    will-change: opacity, transform;
+}
+
+.select__option li{
+    padding: 13px 0 9px;
+}
+
+.select__option-link {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #212529;
+    transition: all .2s;
+}
+
+.select__option-link:hover{
+    color: var(--pink-color);
+    font-size: .975rem;
 }
 
 /* BUTTON FACEBOOK, GOOGLE */

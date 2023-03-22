@@ -486,11 +486,12 @@ header {
 }
 
 /* PRODUCT IN PRODUCT */
+/* orderby  */
 .orderby {
     background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: .5rem 1.3rem;
     border-radius: 4px;
 }
 
@@ -510,7 +511,7 @@ header {
 .orderby .active{
     background-color: var(--pink-color);
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 13px 32px;
     border-radius: 4px;
     font-size: 1rem;
@@ -522,14 +523,59 @@ header {
 .orderby__paginate{
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
+.paginate__number {
+    font-size: 1.15rem;
+    margin-right: 1rem;
+}
+
+.paginate__number-current {
+    color: var(--pink-color);
+}
+
+.paginate__control {
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    width: 5rem;
+    height: 2.5rem;
+}
+
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-color: var(--pink-color);
+    transition: all .3s;
+}
+
+.control-btn:first-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.control-btn:hover {
+    color: var(--pink-color);
+    transition: all .3s;
+    background-color: var(--pink-color);
+    color: white;
+    border-color: white;
+}
+
+/* product  */
 .product__container {
     display: grid;
     grid-template-columns: 25% 75%;
     gap: 25px 30px;
     width: 85%;
-    margin: 128px auto 0;
+    margin: 95px auto 0;
 }
 
 .product__container .category {
