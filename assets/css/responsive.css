@@ -1,0 +1,118 @@
+/* Mobile & Tablet  */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    /* HEADER  */
+    /*
+    .header__nav {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header__nav .name {
+        color: var(--purple-color);
+    }
+    
+    .header__nav ul {
+        list-style: none;
+    }
+    
+    .header__nav ul li {
+        display: inline;
+        margin: 0 1rem;
+    }
+    
+    .header__nav ul a,
+    .header__nav ul i {
+        text-decoration: none;
+        color: white;
+        font-size: .8rem;
+        font-weight: 510;
+        letter-spacing: 2px;
+        transition: all .5s;
+    }
+    
+    .header__nav ul i {
+        font-size: 1rem;
+    }
+    
+    .header__nav ul li:hover i,
+    .header__nav ul li:hover a {
+        color: var(--pink-color);
+    }
+    
+    .header__nav ul .active a {
+        color: var(--pink-color);
+    }
+    
+    .header__nav ul a:hover {
+        color: var(--pink-color);
+    }
+    */
+    /* HEADER SEARCH */
+    .header__logo {
+        margin: 0 0 0 1.5rem;
+    }
+
+    .header__body {
+        margin-bottom: 0rem;
+        height: 3rem;
+    }
+
+    .header__body p {
+        font-size: 1.5rem;
+        margin: 1.3rem 0 0rem 3rem
+    }
+
+    .header__search button,
+    .header__search input {
+        margin-top: 0rem;
+        height: 2.8rem;
+    }
+
+    .header__search input {
+        width: 18rem;
+        font-size: .9rem;
+    }
+
+    /* HEADER CART  */
+    .header__cart {
+        margin: 0 4rem .5rem 0rem;
+        width: 40px;
+        padding-left: 20px;
+    }
+
+    .cart-number {
+        right: -17px;
+    }
+
+    .cart-list::after {
+        right: 33px;
+    }
+
+    .cart-list {
+        right: -40px;
+        width: 350px;
+    }
+}
+
+/* Mobile  */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}

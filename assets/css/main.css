@@ -9,28 +9,28 @@ header {
     z-index: 3;
 }
 
-.header__content {
+.header__nav {
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__content .name {
+.header__nav .name {
     color: var(--purple-color);
 }
 
-.header__content ul {
+.header__nav ul {
     list-style: none;
 }
 
-.header__content ul li {
+.header__nav ul li {
     display: inline;
     margin: 0 1rem;
 }
 
-.header__content ul a,
-.header__content ul i {
+.header__nav ul a,
+.header__nav ul i {
     text-decoration: none;
     color: white;
     font-size: .8rem;
@@ -39,20 +39,20 @@ header {
     transition: all .5s;
 }
 
-.header__content ul i {
+.header__nav ul i {
     font-size: 1rem;
 }
 
-.header__content ul li:hover i,
-.header__content ul li:hover a {
+.header__nav ul li:hover i,
+.header__nav ul li:hover a {
     color: var(--pink-color);
 }
 
-.header__content ul .active a {
+.header__nav ul .active a {
     color: var(--pink-color);
 }
 
-.header__content ul a:hover {
+.header__nav ul a:hover {
     color: var(--pink-color);
 }
 
@@ -70,7 +70,7 @@ header {
     visibility: hidden;
 }
 
-.header__search {
+.header__body {
     margin: auto;
     margin-bottom: .3rem;
     display: flex;
@@ -79,13 +79,13 @@ header {
     height: 4rem;
 }
 
-.header__search p {
+.header__body p {
     color: white;
     font-size: 1.9rem;
     margin: .8rem 0 0 3rem
 }
 
-.header__search span {
+.header__body span {
     font-weight: 501;
 }
 
@@ -102,7 +102,7 @@ header {
     outline: none;
 }
 
-.search {
+.header__search {
     display: flex;
 }
 
@@ -191,22 +191,22 @@ header {
     font-weight: 600;
 }
 
-.header__search .cart {
+.header__body .cart {
     text-align: center;
 }
 
-.header__search .header__cart:hover .cart-list {
+.header__body .header__cart:hover .cart-list {
     display: block;
     transition: all .5s;
 
 }
 
-.header__search .header__cart:hover i {
+.header__body .header__cart:hover i {
     color: var(--pink-color);
     transition: all .5s;
 }
 
-.header__search i {
+.header__body i {
     color: white;
     font-size: 1.3rem;
     margin: 1rem 6rem 0 0;

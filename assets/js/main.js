@@ -1,4 +1,5 @@
 // VALIDATION FORM FIELDS
+
 const usernameEl = document.querySelector('#username')
 const firstnameEl = document.querySelector('#firstname')
 const lastnameEl = document.querySelector('#lastname')
@@ -28,9 +29,11 @@ const checkUsername = () => {
 
 const checkFirstname = () => {
     let valid = false
-    const min = 1, max = 25
+    const min = 1, max = 15
     const firstname = firstnameEl.value.trim()
-    if (!isBetween(firstname.length, min, max)) {
+    if (!isRequired(firstname)) {
+        showError(firstnameEl, 'First Name cannot be blank.')
+    } else if(!isBetween(firstname.length, min, max)) {
         showError(firstnameEl, `First name must be between ${min} and ${max} characters.`)
     } else {
         showSuccess(firstnameEl)
@@ -41,9 +44,11 @@ const checkFirstname = () => {
 
 const checkLastname = () => {
     let valid = false
-    const min = 1, max = 25
+    const min = 1, max = 15
     const lastname = lastnameEl.value.trim()
-    if (!isBetween(lastname.length, min, max)) {
+    if (!isRequired(lastname)) {
+        showError(lastnameEl, 'Last Name cannot be blank.')
+    } else if(!isBetween(lastname.length, min, max)) {
         showError(lastnameEl, `Last name must be between ${min} and ${max} characters.`)
     } else {
         showSuccess(lastnameEl)
@@ -149,7 +154,6 @@ const showError = (input, message) => {
     //show the error message
     const error = formFeild.querySelector('small')
     error.textContent = message
-
 }
 
 const showSuccess = (input) => {
@@ -171,17 +175,10 @@ form.addEventListener('submit', function (e) {
 
     // validate fields
     let isUsernameValid = checkUsername(),
-        isFirstnameValid = checkFirstname(),
-        isLastnameValid = checkLastname(),
         isEmailValid = checkEmail(),
         isPasswordValid = checkPassword(),
         isConfirmPasswordValid = checkConfirmPassword(),
         isPhoneNumber = checkPhoneNumber()
-
-    let isContactValid = isFirstnameValid &&
-        isLastnameValid &&
-        isEmailValid &&
-        isPhoneNumber
 
     let isFormValid = isUsernameValid &&
         isEmailValid &&
@@ -190,8 +187,8 @@ form.addEventListener('submit', function (e) {
         isPhoneNumber
 
     // submit to the server if the form is valid
-    if (isContactValid) {
-        alert('Your info was send');
+    if (isFormValid) {
+        
     }
 })
 
@@ -234,3 +231,96 @@ form.addEventListener('input', debounce(function (e) {
             break
     }
 }))
+
+// SUBMIT CONTACT 
+const contactForm = document.querySelector('.js-submit-contact')
+// Eventlistener
+contactForm.addEventListener('click', function (e) {
+    // prevent the form from submitting
+    e.preventDefault()
+
+    // validate fields
+    let isFirstnameValid = checkFirstname(),
+        isLastnameValid = checkLastname(),
+        isEmailValid = checkEmail(),
+        isPhoneNumber = checkPhoneNumber()
+
+    let isContactValid = isFirstnameValid &&
+        isLastnameValid &&
+        isEmailValid &&
+        isPhoneNumber
+
+    // submit to the server if the contact form is valid
+    if (isContactValid) {
+        alert('Your info has been send!');
+    }
+})
+
+// PRODUCT - ORDERBY BUTTON 
+// Show
+const activeBtns = document.querySelectorAll('.js-btn')
+const activeBtn1 = document.querySelector('.btn1')
+const activeBtn2 = document.querySelector('.btn2')
+const activeBtn3 = document.querySelector('.btn3')
+
+activeBtn1.addEventListener('click', function() {
+    activeBtns.classList.add('active')
+})
+
+activeBtn2.addEventListener('click', function() {
+    activeBtn1.classList.remove('active')
+    activeBtn2.classList.add('active')
+    activeBtn3.classList.remove('active')
+})
+
+activeBtn2.addEventListener('click', function() {
+    activeBtn1.classList.remove('active')
+    activeBtn2.classList.remove('active')
+    activeBtn3.classList.add('active')
+})
+
+// SEARCH - ORDER BY
+angular.module("app", []);
+angular.module("app").controller("controller", function (){
+    var vm = this;
+    // vm.title = "Learn Angular by example";
+    vm.searchInput = "";
+    // vm.shows = [
+    //     {
+    //         title: "Doi mat co lua",
+    //         author: "Nguyen Hung Son",
+    //         favorite: true
+    //     },
+    //     {
+    //         title: "Life of Pi",
+    //         author: "Davan",
+    //         favorite: false
+    //     },
+    //     {
+    //         title: "Learn Angular by example",
+    //         author: "Fpt-Aptech",
+    //         favorite: true
+    //     },
+    //     {
+    //         title: "Ho nha trai",
+    //         author: "Nguyen Anh Tu",
+    //         favorite: false
+    //     },
+    //     {
+    //         title: "Hoc code today",
+    //         author: "Fpt",
+    //         favorite: true
+    //     }
+    // ];
+    vm.orders = [
+        {
+            key: "select__option-link",
+            reverse: false
+        },
+        {
+            key: "select__option-link",
+            reverse: true
+        }
+    ];
+    vm.order = vm.orders[0];
+});
