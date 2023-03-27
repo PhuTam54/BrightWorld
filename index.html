@@ -50,12 +50,19 @@
                 </nav>
             </div>
             <div class="header__body">
+                <label for="mobile-search" class="header__mobile-search">
+                    <a href="product.html">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </a>
+                </label>
                 <div class="header__logo" style="background-image: url(assets/img/logo.png);">
                     <p><span>.</span> Bright<span>World</span></p>
                 </div>
-                <div class="header__search">
+                <div class="header__search hide-on-mobile">
                     <a href="product.html">
-                        <input type="text" placeholder="Search here">
+                        <input type="text" placeholder="Search here (Go to Product)">
                     </a>
                     <button>
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -74,6 +81,26 @@
                 </div>
             </div>
         </div>
+        <ul class="header__navbar">
+            <li class="navbar__item active">
+                <a href="#" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="product.html" class="navbar__link">Product</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">Brand</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#contact" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">About Us</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" class="navbar__link">Login</a>
+            </li>
+        </ul>
     </header>
 
     <!-- CAROUSEL -->
@@ -192,7 +219,8 @@
             <!-- item2 -->
             <a class="product__item" href="#">
                 <div class="product__img" style="background-image: url(assets/img/sp2.jfif);"> </div>
-                <h4 class="product__name">Đèn led dây Nanoco NST1202 8W ( Led dây hắt trần Nanoco NST1202 8W / mét )</h4>
+                <h4 class="product__name">Đèn led dây Nanoco NST1202 8W ( Led dây hắt trần Nanoco NST1202 8W / mét )
+                </h4>
                 <div class="product__price">
                     <span class="product__price-old">$15.99</span>
                     <span class="product__price-new">$10.55</span>
@@ -220,7 +248,8 @@
                 </div>
 
                 <div class="product__detail">
-                    <h4 class="product__detail-name">Đèn led dây Nanoco NST1202 8W ( Led dây hắt trần Nanoco NST1202 8W / mét )</h4>
+                    <h4 class="product__detail-name">Đèn led dây Nanoco NST1202 8W ( Led dây hắt trần Nanoco NST1202 8W
+                        / mét )</h4>
                     <div class="product__detail-price">
                         <span class="product__detail-price-old">$15.99</span>
                         <span class="product__detail-price-new">$10.55</span>
@@ -355,7 +384,8 @@
                 </div>
 
                 <div class="product__detail">
-                    <h4 class="product__detail-name">DecBest DecBest Romantic Rotating Spin Night Light Projector Cosmos Sky</h4>
+                    <h4 class="product__detail-name">DecBest DecBest Romantic Rotating Spin Night Light Projector Cosmos
+                        Sky</h4>
                     <div class="product__detail-price">
                         <span class="product__detail-price-old">$22.99</span>
                         <span class="product__detail-price-new">$18.55</span>
@@ -392,7 +422,7 @@
                 </div>
             </a>
         </div>
-        
+
         <h3>JUST FOR YOU</h3>
         <div class="product__content">
             <!-- item5 -->
@@ -669,7 +699,7 @@
                 </div>
             </a>
         </div>
-        
+
         <h3>NEW PRODUCTS</h3>
         <div class="product__content">
             <!-- item9 -->
@@ -975,21 +1005,20 @@
         <div class="testimonials__content">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <p><i class="fa-solid fa-quote-left"></i> Mong muốn của BrightWorld là làm hài lòng mọi khách hàng
-                        với đa dạng sản phẩm chất lượng cao đến từ nhiều nhãn hàng nổi tiếng trên thế giới. Sự hài lòng
-                        của bạn là niềm vui của chúng tôi.<i class="fa-solid fa-quote-right"></i></p>
+                    <p><i class="fa-solid fa-quote-left"></i>BrightWorld desires to satisfy every customer with
+                        high-quality products from many famous brands worldwide. Your satisfaction is our pleasure.<i
+                            class="fa-solid fa-quote-right"></i></p>
                     <p>CEO Phú Tâm</p>
                 </div>
                 <div class="item">
-                    <p><i class="fa-solid fa-quote-left"></i> I love BrightWorld so much. Good product quality and very
+                    <p><i class="fa-solid fa-quote-left"></i>I love BrightWorld so much. Good product quality and very
                         attentive service. Thank you for the great led products, good luck.<i
                             class="fa-solid fa-quote-right"></i></p>
                     <p>Logan Lee</p>
                 </div>
                 <div class="item">
-                    <p><i class="fa-solid fa-quote-left"></i>BrightWorld là một cửa hàng bán đèn led uy tín nhất hiện
-                        nay, từng sản phẩm đều được chọn lọc kĩ lưỡng và chất lượng cao. <i
-                            class="fa-solid fa-quote-right"></i></p>
+                    <p><i class="fa-solid fa-quote-left"></i>BrightWorld is the most prestigious LED shop today, each
+                        product is carefully selected and high quality.<i class="fa-solid fa-quote-right"></i></p>
                     <p>Chu Diệp Linh</p>
                 </div>
             </div>
@@ -1000,7 +1029,7 @@
     <section id="contact" class="contact">
         <h2>CONTACT</h2>
         <div class="contact__form">
-            <form  action="#" id="signup" method="post">
+            <form action="#" id="signup" method="post">
                 <div class="form-field">
                     <input name="firstname" type="text" id="firstname" placeholder="First Name" required>
                     <small></small>
@@ -1141,7 +1170,7 @@
             nav: true,
             autoplay: true,
             autoplayTimeout: 4000,
-            // autoplayHoverPause: true,
+            autoplayHoverPause: true,
             responsive: {
                 0: {
                     items: 1

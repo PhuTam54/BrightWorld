@@ -54,9 +54,11 @@ h2 {
 /* SELECT INPUT */
 .select__input {
     position: relative;
-    width: 150px;
+    width: 140px;
     background-color: white;
-    padding: 13px 25px;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .7rem .9rem;
     color: black;
     cursor: default;
     display: flex;
@@ -71,7 +73,7 @@ h2 {
     position: absolute;
     left: 0;
     right: 0;
-    top: 45px ;
+    top: 39px ;
     background-color: white;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -90,7 +92,7 @@ h2 {
 }
 
 .select__option-link {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     text-decoration: none;
     color: #212529;
     transition: all .2s;
@@ -98,7 +100,7 @@ h2 {
 
 .select__option-link:hover{
     color: var(--pink-color);
-    font-size: .975rem;
+    font-size: .9rem;
 }
 
 /* BUTTON FACEBOOK, GOOGLE */
@@ -163,6 +165,3 @@ h2 {
 }
 
 /* RESPONSIVE  */
-.grid{
-    
-}
