@@ -631,9 +631,12 @@
             </div>
             <div class="footer__item">
                 <h3>SUBSCRIBE US</h3>
-                <form class="footer__sub">
-                    <input type="email" name="" id="" placeholder="name@example.com">
-                    <button type="submit">Send</button>
+                <form class="footer__sub" action="#" id="signup" method="post">
+                    <div class="form-field">
+                        <input type="email" name="email" id="subscribe-email" placeholder="name@example.com" required>
+                        <small></small>
+                    </div>
+                    <button class="js-submit-subscribe" type="submit">Send</button>
                 </form>
                 <p>Sign up now to receive notifications as soon as a new product is added.</p>
             </div>

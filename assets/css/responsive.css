@@ -324,6 +324,10 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
         font-weight: 500;
     }
 
+    .contact__map {
+        margin: -1rem 0;
+    }
+
     .contact__info i {
         font-size: 1.5rem;
     }
@@ -378,12 +382,18 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
 
     .footer__item .footer__sub input {
         font-size: .8rem;
+        margin-bottom: 4px;
     }
 
     .footer__item .footer__sub button {
         padding: .5rem 1rem;
         font-weight: 500;
-        margin-bottom: 1rem;
+        margin: 4px 0 1rem 0;
+    }
+
+    .footer__item .error {
+        color: rgb(147, 147, 255);
+        font-size: .875rem;
     }
 
     .footer__coppyright {
@@ -400,6 +410,11 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
 @media (max-width: 739px) {
     .hide-on-mobile {
         display: none;
+    }
+
+    /* valid -- error */
+    .error {
+        font-size: .8rem;
     }
 
     /* nav bar  */
@@ -630,6 +645,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         padding: .5rem 0;
         font-size: .8rem;
     }
+
     /* NUMBER  */
     .number {
         padding: 1rem 0;
@@ -699,8 +715,18 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         font-size: .7rem;
     }
 
+    .contact__form textarea {
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
     .contact__form button {
         font-size: .7rem;
+        font-weight: 600;
+    }
+
+    .contact__map {
+        margin: -1.5rem 0;
     }
 
     .contact__info i {
@@ -717,7 +743,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .footer__main {
-        width: 100%;
+        width: 90%;
         padding-bottom: 10px;
     }
 
@@ -754,15 +780,20 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .footer__item .footer__sub input {
-        font-size: .5rem;
+        font-size: .675rem;
         padding: 10px 0px 10px 5px;
+        margin-bottom: 4px;
     }
 
     .footer__item .footer__sub button {
         padding: .3rem .6rem;
         font-weight: 500;
-        margin-bottom: 1rem;
+        margin: 4px 0 1rem 0;
         font-size: .7rem;
+    }
+
+    .footer__item .error {
+        color: rgb(147, 147, 255);
     }
 
     .footer__coppyright {

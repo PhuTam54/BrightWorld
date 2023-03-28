@@ -8,6 +8,8 @@ const phoneEl = document.querySelector('#phone')
 const passwordEl = document.querySelector('#password')
 const confirmPasswordEl = document.querySelector('#confirmpassword')
 
+const subscribeEl = document.querySelector('#subscribe-email')
+
 const form = document.querySelector('#signup')
 
 // check 
@@ -62,10 +64,24 @@ const checkEmail = () => {
     const email = emailEl.value.trim()
     if (!isRequired(email)) {
         showError(emailEl, 'Email cannot be blank.')
-    } else if (!isEmailValid(email)) {
+    } else if (!isSubscribeEmailValid(email)) {
         showError(emailEl, 'Email is not valid.')
     } else {
         showSuccess(emailEl)
+        valid = true
+    }
+    return valid
+}
+
+const checkSubscribeEmail = () => {
+    let valid = false
+    const email = subscribeEl.value.trim()
+    if (!isRequired(email)) {
+        showError(subscribeEl, 'Email cannot be blank.')
+    } else if (!isEmailValid(email)) {
+        showError(subscribeEl, 'Email is not valid.')
+    } else {
+        showSuccess(subscribeEl)
         valid = true
     }
     return valid
@@ -252,7 +268,23 @@ contactForm.addEventListener('click', function (e) {
 
     // submit to the server if the contact form is valid
     if (isContactValid) {
-        alert('Your info has been send!');
+        alert('Your information has been submitted!');
+    }
+})
+
+// SUBMIT SUBSCRIBE 
+const subscribeForm = document.querySelector('.js-submit-subscribe')
+// Eventlistener
+subscribeForm.addEventListener('click', function (e) {
+    // prevent the form from submitting
+    e.preventDefault()
+
+    // validate fields
+    let isSubscribeEmailValid = checkSubscribeEmail()
+
+    // submit to the server if the subscribe form is valid
+    if (isSubscribeEmailValid) {
+        alert('Your information has been submitted!');
     }
 })
 

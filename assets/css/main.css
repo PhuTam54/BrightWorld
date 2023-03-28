@@ -99,7 +99,7 @@ header {
     padding: 14px;
     border-radius: 5px 0 0 5px;
     border: none;
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .header__search input:focus {
@@ -459,7 +459,7 @@ header {
     content: "";
     position: absolute;
     left: 0px;
-    bottom: -7px;
+    bottom: -6px;
     border-top: 7px solid #ca5454;
     border-left: 7px solid transparent;
 }
@@ -525,7 +525,7 @@ header {
 }
 
 .product__item:hover {
-    box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
     transform: translateY(-8px)
 }
 
@@ -817,7 +817,7 @@ footer {
 }
 
 .footer__item .footer__sub input {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
@@ -832,7 +832,11 @@ footer {
     padding: 7px 16px;
     border-color: black;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin: 10px 0 24px;
+}
+
+.footer__item .error {
+    color: rgb(147, 147, 255);
 }
 
 .footer__coppyright {
