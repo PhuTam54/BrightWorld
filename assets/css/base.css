@@ -96,6 +96,7 @@ h2 {
     text-decoration: none;
     color: #212529;
     transition: all .2s;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .select__option-link:hover{

@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/product.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/home-responsive.css">
+    <link rel="stylesheet" href="assets/css/product-responsive.css">
 
 </head>
 
@@ -30,6 +31,7 @@
     <!-- HEADER  -->
     <header>
         <div class="header__contain">
+
             <div class="header__nav">
                 <div class="name">PhuTam</div>
                 <nav>
@@ -43,27 +45,37 @@
                     </ul>
                 </nav>
             </div>
+
             <div class="header__body">
-                <label for="mobile-search" class="header__mobile-search">
-                    <a href="product.html">
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </a>
-                </label>
+                <div class="header__checkbox">
+                    <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                </div>
+                
+                <input type="checkbox" hidden id="mobile-menu-checkbox" class="header__mobile-checkmenu">
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-checkbox">
+
                 <div class="header__logo" style="background-image: url(assets/img/logo.png);">
                     <p><span>.</span> Bright<span>World</span></p>
                 </div>
-                <div class="header__search hide-on-mobile">
+
+                <div class="header__search">
                     <input type="text" placeholder="Search here ..." ng-model="main.searchInput">
                     <button>
                         <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                     </button>
                 </div>
+
                 <div class="header__cart">
-                    <a href="#" class="cart">
+                    <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
+                    </div>
                     <span class="cart-number">0</span>
                     <!-- Emty cart: class= "empty-cart"-->
                     <div class="cart-list empty-cart">
@@ -71,34 +83,37 @@
                         <span class="empty-cart-msg">No product</span>
                     </div>
                 </div>
+
+                <ul class="header__navbar">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item active">
+                        <a href="#" class="navbar__link">Product</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Brand</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Login</a>
+                    </li>
+                </ul>
+
             </div>
-            <ul class="header__navbar">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__link">Home</a>
-                </li>
-                <li class="navbar__item active">
-                    <a href="#" class="navbar__link">Product</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="navbar__link">Brand</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="navbar__link">Contact</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="navbar__link">About Us</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#" class="navbar__link">Login</a>
-                </li>
-            </ul>
+
         </div>
     </header>
 
     <!-- PRODUCT  -->
     <section class="product">
         <div class="product__container">
-            <div class="category">
+            <div class="category hide-on-mobile">
                 <h3 class="category__heading"><i class="fa-solid fa-filter"></i> Filter</h3>
                 <h4>Types</h4>
                 <ul>
@@ -121,8 +136,87 @@
                     <li>Rippers</li>
                 </ul>
             </div>
+
             <div class="product__page">
-                <div class="orderby hide-on-mobile-tablet">
+
+                <ul class="mobile__product-navbar">
+                    <li class="navbar__item active">
+                        <a href="#" class="navbar__link">Best sellers</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Just For You</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">New Items</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <div class="select__input" ng-model="main.order"
+                            ng-options="order as order.title for order in main.orders">
+                            <span class="select__label">Price</span>
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                            <ul class="select__option">
+                                <li>
+                                    <a href="" class="select__option-link">Low To High</a>
+                                </li>
+                                <li>
+                                    <a href="" class="select__option-link">High To Low</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <nav class="mobile__category">
+                    <ul class="category__list">
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Bulbs</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Spot Lights</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Decoration Lights</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Smart Lights</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: PhuTam</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: Takeshi</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: Aladin</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: GE Lighting</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: Dazone</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: Sunco</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: Reit</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: Great Value</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: Viribright</a>
+                        </li>
+                        <li class="category__item">
+                            <a href="" class="category__item-link">Brand: Rippers</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="orderby hide-on-mobile">
                     <span class="orderby__label">Order By</span>
                     <button type="button" class="js-btn btn1 active">Best sellers</button>
                     <button type="button" class="js-btn btn2">Just For You</button>
@@ -156,6 +250,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="product" ng-repeat="filter:main.searchInput">
                     <!-- item1 -->
                     <a class="product__item" href="#">
@@ -319,7 +414,7 @@
                                 <i class="fa-solid fa-star gold-star"></i>
                                 <i class="fa-solid fa-star gold-star"></i>
                             </div>
-                            <span class="product__action-sold">900k Sold</span>
+                            <span class="product__action-sold">900 Sold</span>
                         </div>
                         <div class="product__origin">
                             <div class="product__origin-brand">Takeshi</div>
@@ -347,7 +442,7 @@
                                     <i class="fa-solid fa-star gold-star"></i>
                                     <i class="fa-solid fa-star gold-star"></i>
                                 </div>
-                                <span class="product__detail-action-sold">900k Sold</span>
+                                <span class="product__detail-action-sold">900 Sold</span>
                             </div>
                             <div class="product__detail-origin">
                                 <div class="product__detail-origin-brand">Takeshi</div>
@@ -388,7 +483,7 @@
                                 <i class="fa-solid fa-star gold-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <span class="product__action-sold">789k Sold</span>
+                            <span class="product__action-sold">789 Sold</span>
                         </div>
                         <div class="product__origin">
                             <div class="product__origin-brand">Aladin</div>
@@ -418,7 +513,7 @@
                                     <i class="fa-solid fa-star gold-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
-                                <span class="product__detail-action-sold">789k Sold</span>
+                                <span class="product__detail-action-sold">789 Sold</span>
                             </div>
                             <div class="product__detail-origin">
                                 <div class="product__detail-origin-brand">Aladin</div>
@@ -457,7 +552,7 @@
                                 <i class="fa-solid fa-star gold-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <span class="product__action-sold">234k Sold</span>
+                            <span class="product__action-sold">234 Sold</span>
                         </div>
                         <div class="product__origin">
                             <div class="product__origin-brand">PhuTam</div>
@@ -486,7 +581,7 @@
                                     <i class="fa-solid fa-star gold-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                 </div>
-                                <span class="product__detail-action-sold">234k Sold</span>
+                                <span class="product__detail-action-sold">234 Sold</span>
                             </div>
                             <div class="product__detail-origin">
                                 <div class="product__detail-origin-brand">PhuTam</div>
@@ -525,7 +620,7 @@
                                 <i class="fa-solid fa-star gold-star"></i>
                                 <i class="fa-solid fa-star gold-star"></i>
                             </div>
-                            <span class="product__action-sold">101k Sold</span>
+                            <span class="product__action-sold">101 Sold</span>
                         </div>
                         <div class="product__origin">
                             <div class="product__origin-brand">PhuTam</div>
@@ -555,7 +650,7 @@
                                     <i class="fa-solid fa-star gold-star"></i>
                                     <i class="fa-solid fa-star gold-star"></i>
                                 </div>
-                                <span class="product__detail-action-sold">101k Sold</span>
+                                <span class="product__detail-action-sold">101 Sold</span>
                             </div>
                             <div class="product__detail-origin">
                                 <div class="product__detail-origin-brand">PhuTam</div>
@@ -630,7 +725,7 @@
                 <p>Los Angeles branch <br>(213) 054-2004 <br>loganlee@gmail.com </p>
             </div>
             <div class="footer__item">
-                <h3>SUBSCRIBE US</h3>
+                <h3>Subscribe Us</h3>
                 <form class="footer__sub" action="#" id="signup" method="post">
                     <div class="form-field">
                         <input type="email" name="email" id="subscribe-email" placeholder="name@example.com" required>

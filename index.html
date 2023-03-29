@@ -28,7 +28,8 @@
     <!-- BASE, MAIN CSS  -->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/home-responsive.css">
+    <link rel="stylesheet" href="assets/css/product-responsive.css">
 
 </head>
 
@@ -36,6 +37,7 @@
     <!-- HEADER  -->
     <header>
         <div class="header__contain">
+
             <div class="header__nav">
                 <div class="name">PhuTam</div>
                 <nav>
@@ -49,29 +51,38 @@
                     </ul>
                 </nav>
             </div>
-            <div class="header__body">
-                <label for="mobile-search" class="header__mobile-search">
-                    <a href="product.html">
-                        <button>
+
+            <div class="header__body home-page">
+
+                <div class="header__checkbox">
+                    <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <a href="product.html">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </a>
-                </label>
+                        </a>
+                    </label>
+                </div>
+
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-checkbox">
+
                 <div class="header__logo" style="background-image: url(assets/img/logo.png);">
                     <p><span>.</span> Bright<span>World</span></p>
                 </div>
+
                 <div class="header__search hide-on-mobile">
-                    <a href="product.html">
-                        <input type="text" placeholder="Search here (Go to Product)">
-                    </a>
+                    <input type="text" placeholder="Search here ..." ng-model="main.searchInput">
                     <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                     </button>
                 </div>
+
                 <div class="header__cart">
-                    <a href="#" class="cart">
+                    <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
+                    </div>
                     <span class="cart-number">0</span>
                     <!-- Emty cart: class= "empty-cart"-->
                     <div class="cart-list empty-cart">
@@ -79,28 +90,29 @@
                         <span class="empty-cart-msg">No product</span>
                     </div>
                 </div>
+
+                <ul class="header__navbar">
+                    <li class="navbar__item active">
+                        <a href="#" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="product.html" class="navbar__link">Product</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Brand</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#contact" class="navbar__link">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Login</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <ul class="header__navbar">
-            <li class="navbar__item active">
-                <a href="#" class="navbar__link">Home</a>
-            </li>
-            <li class="navbar__item">
-                <a href="product.html" class="navbar__link">Product</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Brand</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#contact" class="navbar__link">Contact</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">About Us</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Login</a>
-            </li>
-        </ul>
     </header>
 
     <!-- CAROUSEL -->
@@ -1129,7 +1141,7 @@
                 <p>Los Angeles branch <br>(213) 054-2004 <br>loganlee@gmail.com </p>
             </div>
             <div class="footer__item">
-                <h3>SUBSCRIBE US</h3>
+                <h3>Subscribe Us</h3>
                 <form class="footer__sub" action="#" id="signup" method="post">
                     <div class="form-field">
                         <input type="email" name="email" id="subscribe-email" placeholder="name@example.com">
