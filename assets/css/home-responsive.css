@@ -441,11 +441,16 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         padding: 8px 0 0;
     }
 
+    .header__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
     /* Menu  */
     .header__checkbox {
         width: 100px;
         display: flex;
-        margin: auto 0rem auto auto;
+        margin: 0 0 0 1rem;
         /* user-select: none;
         -webkit-user-select: none; */
     }
@@ -482,21 +487,44 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
 
     /* Logo */
     .header__logo p {
-        font-size: 1rem;
-        margin: .8rem 0 0 2.2rem;
+        font-size: 1.1rem;
+        margin: .8rem 0 0 1.8rem;
     }
 
     .header__logo {
         height: 2.5rem;
-        margin-left: 0;
+        margin-left: -10px;
     }
 
-    /* Cart */
+    /* Header account*/
+    .header__user-cart {
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+
+    .header__account {
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-color: var(--pink-color);
+        border-radius: 50%;
+        margin: .4rem 1rem 0 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .header__account i {
+        line-height: 10px;
+        font-size: 1rem;
+        margin: .8rem 0 0 .6rem;
+    }
+
+    /* & cart  */
     .header__cart {
         width: 40px;
         padding-left: 4px;
         margin: auto;
-        margin-bottom: 1.25rem;
+        margin-bottom: .7rem;
         -webkit-tap-highlight-color: transparent;
     }
 
@@ -509,13 +537,13 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .cart-list::after {
-        right: 33px;
+        right: 69px;
     }
 
     .cart-list {
-        right: -20px;
-        width: 300px;
-        z-index: 1;
+        right: -58px;
+        width: 350px;
+        z-index: 3;
     }
 
     /* Carousel  */
@@ -765,11 +793,11 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
 
     /* FOOTER  */
     footer {
-        padding: 1rem 0;
+        padding: 2rem 0;
     }
 
     .footer__main {
-        width: 90%;
+        width: 100%;
         padding-bottom: 10px;
     }
 
@@ -807,7 +835,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .footer__item .footer__sub input {
-        font-size: .6rem;
+        font-size: .55rem;
         padding: 10px 0px 10px 5px;
         margin-bottom: 4px;
     }

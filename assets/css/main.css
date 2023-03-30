@@ -218,6 +218,10 @@ header {
     margin: 1rem 6rem 0 0;
 }
 
+.header__account {
+    display: none;
+}
+
 /* HEADER NAV BAR on mobile & tablet */
 .header__navbar {
     position: fixed;

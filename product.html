@@ -57,7 +57,7 @@
                     </label>
 
                 </div>
-                
+
                 <input type="checkbox" hidden id="mobile-menu-checkbox" class="header__mobile-checkmenu">
                 <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-checkbox">
 
@@ -72,15 +72,23 @@
                     </button>
                 </div>
 
-                <div class="header__cart">
-                    <div class="cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                <div class="header__user-cart">
+                    <div class="header__cart">
+                        <div class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span class="cart-number">0</span>
+                        <!-- Emty cart: class= "empty-cart"-->
+                        <div class="cart-list empty-cart">
+                            <img src="assets/img/empty-cart.png" alt="" class="empty-cart-img">
+                            <span class="empty-cart-msg">No product</span>
+                        </div>
                     </div>
-                    <span class="cart-number">0</span>
-                    <!-- Emty cart: class= "empty-cart"-->
-                    <div class="cart-list empty-cart">
-                        <img src="assets/img/empty-cart.png" alt="" class="empty-cart-img">
-                        <span class="empty-cart-msg">No product</span>
+
+                    <div class="header__account">
+                        <div class="account">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -172,37 +180,37 @@
                 <nav class="mobile__category">
                     <ul class="category__list">
                         <li class="category__item">
-                            <a href="" class="category__item-link">Bulbs</a>
+                            <a href="" class="category__item-link">Type of light: Bulbs</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Spot Lights</a>
+                            <a href="" class="category__item-link">Type: Spot Lights</a>
                         </li>
                         <li class="category__item">
                             <a href="" class="category__item-link">Decoration Lights</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Smart Lights</a>
+                            <a href="" class="category__item-link">Type: Smart Lights</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Brand: PhuTam</a>
+                            <a href="" class="category__item-link">Brand name: PhuTam</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Brand: Takeshi</a>
+                            <a href="" class="category__item-link">Brand name: Takeshi</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Brand: Aladin</a>
+                            <a href="" class="category__item-link">Brand name: Aladin</a>
                         </li>
                         <li class="category__item">
                             <a href="" class="category__item-link">Brand: GE Lighting</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Brand: Dazone</a>
+                            <a href="" class="category__item-link">Brand name: Dazone</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Brand: Sunco</a>
+                            <a href="" class="category__item-link">Brand name: Sunco</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Brand: Reit</a>
+                            <a href="" class="category__item-link">Brand name: Reit</a>
                         </li>
                         <li class="category__item">
                             <a href="" class="category__item-link">Brand: Great Value</a>
@@ -211,7 +219,7 @@
                             <a href="" class="category__item-link">Brand: Viribright</a>
                         </li>
                         <li class="category__item">
-                            <a href="" class="category__item-link">Brand: Rippers</a>
+                            <a href="" class="category__item-link">Brand name: Rippers</a>
                         </li>
                     </ul>
                 </nav>
@@ -728,10 +736,10 @@
                 <h3>Subscribe Us</h3>
                 <form class="footer__sub" action="#" id="signup" method="post">
                     <div class="form-field">
-                        <input type="email" name="email" id="subscribe-email" placeholder="name@example.com" required>
+                        <input type="email" name="email" id="product-subscribe-email" placeholder="name@example.com">
                         <small></small>
                     </div>
-                    <button class="js-submit-subscribe" type="submit">Send</button>
+                    <button class="js-product-subscribe" type="submit">Send</button>
                 </form>
                 <p>Sign up now to receive notifications as soon as a new product is added.</p>
             </div>

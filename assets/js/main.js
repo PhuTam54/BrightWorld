@@ -9,6 +9,7 @@ const passwordEl = document.querySelector('#password')
 const confirmPasswordEl = document.querySelector('#confirmpassword')
 
 const subscribeEl = document.querySelector('#subscribe-email')
+const productSubscribeEl = document.querySelector('#product-subscribe-email')
 
 const form = document.querySelector('#signup')
 
@@ -82,6 +83,20 @@ const checkSubscribeEmail = () => {
         showError(subscribeEl, 'Email is not valid.')
     } else {
         showSuccess(subscribeEl)
+        valid = true
+    }
+    return valid
+}
+
+const checkproductSubscribeEmail = () => {
+    let valid = false
+    const email = productSubscribeEl.value.trim()
+    if (!isRequired(email)) {
+        showError(productSubscribeEl, 'Email cannot be blank.')
+    } else if (!isEmailValid(email)) {
+        showError(productSubscribeEl, 'Email is not valid.')
+    } else {
+        showSuccess(productSubscribeEl)
         valid = true
     }
     return valid
@@ -284,6 +299,22 @@ subscribeForm.addEventListener('click', function (e) {
 
     // submit to the server if the subscribe form is valid
     if (isSubscribeEmailValid) {
+        alert('Your information has been submitted!');
+    }
+})
+
+// SUBMIT SUBSCRIBE 
+const productSubscribeForm = document.querySelector('.js-product-subscribe')
+// Eventlistener
+productSubscribeForm.addEventListener('click', function (e) {
+    // prevent the form from submitting
+    e.preventDefault()
+
+    // validate fields
+    let isProductSubscribeEmailValid = checkproductSubscribeEmail()
+
+    // submit to the server if the subscribe form is valid
+    if (isProductSubscribeEmailValid) {
         alert('Your information has been submitted!');
     }
 })

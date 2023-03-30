@@ -104,6 +104,42 @@ h2 {
     font-size: .9rem;
 }
 
+/* PAGINATION */
+.product__pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 2rem auto 0;
+    list-style: none;
+}
+
+.pagination__item{
+}
+
+.pagination__link {
+    --heigh: 40px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    min-width: 40px;
+    height: var(--heigh);
+    line-height: var(--heigh);
+    text-align: center;
+    transition: all .3s;
+}
+
+.pagination__link:hover {
+    color: var(--pink-color);
+    opacity: .75;
+}
+
+.product__pagination .active {
+    background-color: var(--pink-color);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
 /* BUTTON FACEBOOK, GOOGLE */
 
 .btn-facebook {
