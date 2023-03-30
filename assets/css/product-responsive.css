@@ -331,4 +331,13 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         padding: 1rem 4px 0;
     }
 
+    /* Pagination */
+    .product__pagination {
+        width: 90%;
+        margin: 1rem auto 0;
+    }
+
+    .pagination__link {
+        font-size: .95rem;
+    }
 }
