@@ -724,7 +724,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
 
     /* TESTIMONIALS  */
     .testimonials {
-        padding: 1rem 0;
+        padding: 1rem 0 1.5rem;
     }
 
     .testimonials h2 {
@@ -738,7 +738,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .testimonials__content p {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     .testimonials__content i {

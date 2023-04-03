@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <title>BrightWorld</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT GOOGLE  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!-- BASE, MAIN CSS  -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home-responsive.css">
+    <link rel="stylesheet" href="assets/css/product-responsive.css">
+
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <div class="header__contain">
+
+            <div class="header__nav">
+                <div class="name">PhuTam</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="#">Brand</a></li>
+                        <li class="active"><a href="#">Contact</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><i class="fa-solid fa-user"></i> <a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__body home-page">
+
+                <div class="header__checkbox">
+                    <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <a href="product.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </label>
+                </div>
+
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-checkbox">
+
+                <div class="header__logo" style="background-image: url(assets/img/logo.png);">
+                    <p><span>.</span> Bright<span>World</span></p>
+                </div>
+
+                <div class="header__search hide-on-mobile">
+                    <a href="product.html">
+                        <input type="text" placeholder="Search here (Go to Product)" ng-model="main.searchInput">
+                        <button>
+                            <a href="product.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </button></a>
+                </div>
+
+                <div class="header__user-cart">
+                    <div class="header__cart">
+                        <div class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span class="cart-number">0</span>
+                        <!-- Emty cart: class= "empty-cart"-->
+                        <div class="cart-list empty-cart">
+                            <img src="assets/img/empty-cart.png" alt="" class="empty-cart-img">
+                            <span class="empty-cart-msg">No product</span>
+                        </div>
+                    </div>
+
+                    <div class="header__account">
+                        <div class="account">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="header__navbar">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="product.html" class="navbar__link">Product</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="brand.html" class="navbar__link">Brand</a>
+                    </li>
+                    <li class="navbar__item active">
+                        <a href="#" class="navbar__link">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="aboutus.html" class="navbar__link">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="carousel gallery">
+        <div class="carousel__content">
+            <div class="owl-carousel owl-theme">
+                <figure class="gallery__item">
+                    <div class="item1">
+                        <figcaption class="gallery__overlay">
+                            <h3><span>Bright</span>World</h3>
+                            <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="gallery__item">
+                    <div class="item2">
+                        <figcaption class="gallery__overlay">
+                            <h3><span>Bright</span>World</h3>
+                            <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="gallery__item">
+                    <div class="item3">
+                        <figcaption class="gallery__overlay">
+                            <h3><span>Bright</span>World</h3>
+                            <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="gallery__item">
+                    <div class="item4">
+                        <figcaption class="gallery__overlay">
+                            <h3><span>Bright</span>World</h3>
+                            <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                        </figcaption>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </section>
+     
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>CONTACT</h2>
+        <div class="contact__form">
+            <form action="#" id="signup" method="post">
+                <div class="form-field">
+                    <input name="firstname" type="text" id="firstname" placeholder="First Name" required>
+                    <small></small>
+                </div>
+                <div class="form-field">
+                    <input name="lastname" type="text" id="lastname" placeholder="Last Name" required>
+                    <small></small>
+                </div>
+                <div class="form-field">
+                    <input name="email" type="text" id="email" placeholder="Email" required>
+                    <small></small>
+                </div>
+                <div class="form-field">
+                    <input name="phone" type="text" id="phone" placeholder="Phone number" required>
+                    <small></small>
+                </div class="form-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                <button class="js-submit-contact" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.0483044668204!2d105.78120235872191!3d21.028820100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab86cece9ac1%3A0xa9bc04e04602dd85!2zRlBUIEFwdGVjaCBIw6AgTuG7mWkgLSBI4buHIFRo4buRbmcgxJDDoG8gVOG6oW8gTOG6rXAgVHLDrG5oIFZpw6puIFF14buRYyBU4bq_IChTaW5jZSAxOTk5KQ!5e0!3m2!1svi!2s!4v1675424669850!5m2!1svi!2s"
+                width="100%" height="450" style="border:0; margin: 50px 0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact__info">
+            <div class="contact_item">
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>Hà Nội branch</p>
+                <p>Hồ Chí Minh branch</p>
+                <p>Los Angeles branch</p>
+            </div>
+            <div class="contact_item">
+                <i class="fa-solid fa-phone"></i>
+                <p>(+84) 1234-5678</p>
+                <p>(+84) 6666-8888</p>
+                <p>(213) 054-2004</p>
+            </div>
+            <div class="contact_item">
+                <i class="fa-solid fa-envelope-open"></i>
+                <p>phutam@gmail.com</p>
+                <p>cdl@gmail.com</p>
+                <p>loganlee@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="footer__main">
+            <div class="footer__item">
+                <h3>About Us</h3>
+                <p>BrightWorld is a store that sells the world's top-quality LED lights.</p>
+                <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                <div class="footer__social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h3>Working Time</h3>
+                <div class="footer__time">
+                    <p>Monday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Tuesday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Wednesday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Thursday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Friday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Saturday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Sunday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h3>Contact Us</h3>
+                <p>Hà Nội branch <br>(+84) 1234-5678 <br>phutam@gmail.com </p>
+                <p>Hồ Chí Minh branch <br>(+84) 6666-8888 <br>cdl@gmail.com </p>
+                <p>Los Angeles branch <br>(213) 054-2004 <br>loganlee@gmail.com </p>
+            </div>
+            <div class="footer__item">
+                <h3>Subscribe Us</h3>
+                <form class="footer__sub" action="#" id="signup" method="post">
+                    <div class="form-field">
+                        <input type="email" name="email" id="subscribe-email" placeholder="name@example.com"><br>
+                        <small></small>
+                    </div>
+                    <button class="js-submit-subscribe" type="submit">Send</button>
+                </form>
+                <p>Sign up now to receive notifications as soon as a new product is added.</p>
+            </div>
+        </div>
+        <div class="footer__coppyright">
+            <p>&copy; Copyright belongs to group 1 "The Time Boys" | Design by <span>Phú Tâm</span></p>
+        </div>
+    </footer>
+
+    <!-- Jquery hỗ trợ chạy hiệu ứng của
+            các thư viện animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Jquery Waypoints: Hàm hỗ trợ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+    <!-- MAIN JS  -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
