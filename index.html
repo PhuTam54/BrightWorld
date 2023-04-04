@@ -1174,8 +1174,8 @@
         </div>
 
         <div class="modal__body">
-            <div class="modal__content">
-                <!-- Form Login/Register  -->
+            <div class="modal__register">
+               
                 <!-- <div class="login-form">
                     <div class="login-form__header">
                         <h3 class="login-form__heading">Sign up</h3>
@@ -1189,56 +1189,128 @@
                     </div>
 
                 </div> -->
-                <form action="#" id="form" method="post">
+                
+                <!-- FORM REGISTER  -->
+                <form action="#" id="signup" method="post">
                     <div>
                         <div class="social">
-                            <div class="title">Get Started</div>
+                            <!-- <div class="title">Get Started</div> -->
                             <div class="question">
-                                Already Have an account?<br>
+                                Already have an account?<br>
                                 <span>Sign In</span>
                             </div>
                             <div class="btn">
                                 <div class="btn-1">
-                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png">Sign Up
+                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png">Connect with Google
                                 </div>
                                 <div class="btn-2">
-                                    <img src="http://img.icons8.com/ios-filled/30/ffffff/facebook-new.png">Sign Up
+                                    <img src="http://img.icons8.com/ios-filled/30/ffffff/facebook-new.png">Connect with Facebook
                                 </div>
                             </div>
                         </div>
                         <div class="or">Or</div>
                     </div>
                     <!-- Username input -->
-                    <div>
-                        <label for="username">Username</label>
+                    <div class="form-field">
+                        <label for="register-username">Username</label>
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username" placeholder="Jame Bond">
-                        <i class="fas fa-exclamation-circle failure-icon"></i>
-                        <i class="fas fa-check-circle success-icon"></i>
-                        <div class="error"></div>
+                        <input type="text" name="register-username" id="register-username" placeholder="Enter your user name" required>
+                        <small></small>
                     </div>
                     <!-- Email input -->
-                    <div>
+                    <div class="form-field">
                         <label for="email">Email</label>
                         <i class="far fa-envelope"></i>
-                        <input type="text" name="email" id="email" placeholder="abc@gmail.com">
-                        <i class="fas fa-exclamation-circle failure-icon"></i>
-                        <i class="fas fa-check-circle success-icon"></i>
-                        <div class="error"></div>
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+                        <small></small>
                     </div>
                     <!-- Password input -->
-                    <div>
-                        <label for="password">Password</label>
+                    <div class="form-field">
+                        <label for="register-password">Password</label>
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="password" id="password">
-                        <i class="fas fa-exclamation-circle failure-icon"></i>
-                        <i class="fas fa-check-circle success-icon"></i>
-                        <div class="error"></div>
+                        <input type="password" name="register-password" id="register-password" placeholder="Enter your password" required>
+                        <small></small>
                     </div>
-                    <button id="btn" type="submit">submit</button>
+                    <!-- Confirm Password input -->
+                    <div class="form-field">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password" required>
+                        <small></small>
+                    </div>
+                    <!-- button  -->
+                    <div class="form__button">
+                        <button type="">BACK</button>
+                        <button class="js-submit-register" type="submit">SUBMIT</button>
+                    </div>
                 </form>
-
             </div>
+
+                <!-- <div class="login-form">
+                    <div class="login-form__header">
+                        <h3 class="login-form__heading">Sign up</h3>
+                        <span class="login-form__switch-btn">Sign in</span>
+                    </div>
+
+                    <div class="login-form__form">
+                        <div class="login-form__group">
+                            <input type="text" class="login-form__input">
+                        </div>
+                    </div>
+
+                </div> -->
+                
+                <!-- FORM LOGIN  -->
+            <div class="modal__login">
+                <form action="#" id="signup" method="post">
+                    <div>
+                        <div class="social">
+                            <!-- <div class="title">Get Started</div> -->
+                            <div class="question">
+                                Already have an account?<br>
+                                <span>Sign Up</span>
+                            </div>
+                            <div class="btn">
+                                <div class="btn-1">
+                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png">Connect with Google
+                                </div>
+                                <div class="btn-2">
+                                    <img src="http://img.icons8.com/ios-filled/30/ffffff/facebook-new.png">Connect with Facebook
+                                </div>
+                            </div>
+                        </div>
+                        <div class="or">Or</div>
+                    </div>
+                    <!-- Username input -->
+                    <div class="form-field">
+                        <label for="login-username">Username</label>
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" id="login-username" placeholder="Enter your user name" required>
+                        <small></small>
+                    </div>
+                    <!-- Email input -->
+                    <!-- <div class="form-field">
+                        <label for="email">Email</label>
+                        <i class="far fa-envelope"></i>
+                        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+                        <small></small>
+                    </div> -->
+                    <!-- Password input -->
+                    <div class="form-field">
+                        <label for="login-password">Password</label>
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="login-password" id="login-password" placeholder="Enter your password" required>
+                        <small></small>
+                    </div>
+                    <span class="form__forget">Forget your password?</span>
+                    <!-- button  -->
+                    <div class="form__button">
+                        <button type="">BACK</button>
+                        <button class="js-submit-login" type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+            
         </div>
     </div>
 

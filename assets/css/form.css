@@ -1,43 +1,47 @@
 /** Style of form **/
 .modal__body {
-    width: 70%;
-    height: 70%;
+    width: 600px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .modal__body form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 50px;
+    padding: 2rem;
 }
 
 .modal__body .title {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .modal__body form div input {
     width: 100%;
-    height: 40px;
-    border-radius: 8px;
+    height: 2.7rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     outline: none;
-    padding: 0 30px;
+    padding: 0 2rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    margin-bottom: .5rem;
 }
 
 .modal__body label {
     display: block;
-    margin-bottom: 5px;
-}
-
-.modal__body form div {
-    position: relative;
-    margin-bottom: 15px;
+    margin-bottom: .2rem;
 }
 
 .modal__body input:focus {
-    border: 2px solid #f2796e;
+    border-color: #4f70b5;
+}
+
+.modal__body form i {
+    margin-top: .2rem;
+    color: var(--purple-color);
 }
 
 /** Style of social **/
@@ -46,12 +50,15 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 15px;
+    margin: 1rem 0;
 }
 
 .modal__body .btn-1,
 .modal__body .btn-2 {
-    padding: 10px 5px;
-    width: 100%;
+    font-size: .9rem;
+    padding: 10px 4px;
+    width: 50%;
+    height: 2.7rem;
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -62,6 +69,14 @@
     cursor: pointer;
 }
 
+.modal__body .btn-1 i {
+    font-size: 1rem;
+}
+
+.btn-1 img {
+    width: 2rem;
+}
+
 .modal__body .btn-2 {
     background-color: #4f70b5;
     color: white;
@@ -69,6 +84,7 @@
 
 .modal__body .or {
     text-align: center;
+    margin: 1.5rem 0 1rem;
 }
 
 .modal__body .question {
@@ -76,8 +92,10 @@
 }
 
 .modal__body span {
-    color: #f2796e;
+    color: var(--pink-color);
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /** Style of form icons **/
@@ -102,25 +120,26 @@ form div i {
 }
 
 .error {
-    font-size: 14.5px;
+    font-size: 1.1rem;
     margin-top: 5px;
 }
 
-/** Style of button **/
-.modal__body button {
-    margin-top: 15px;
-    width: 100%;
-    height: 45PX;
-    background-color: #f2796e;
-    border: 2px solid #f2796e;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.1s ease;
+.error label{
+    font-size: .95rem;
 }
 
-button:hover {
-    opacity: 0.8;
+/** Style of button **/
+.modal__body .form__button {
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.form__button button:first-of-type {
+    background-color: unset;
+    color: black;
+}
+
+/* login form  */
+.form__forget {
+    margin: 4px 0 2rem auto ;
 }

@@ -1,11 +1,12 @@
 // VALIDATION FORM FIELDS
-
-const usernameEl = document.querySelector('#username')
+const registerUsernameEl = document.querySelector('#register-username')
+const loginUsernameEl = document.querySelector('#login-username')
 const firstnameEl = document.querySelector('#firstname')
 const lastnameEl = document.querySelector('#lastname')
 const emailEl = document.querySelector('#email')
 const phoneEl = document.querySelector('#phone')
-const passwordEl = document.querySelector('#password')
+const registerPasswordEl = document.querySelector('#register-password')
+const loginPasswordEl = document.querySelector('#login-password')
 const confirmPasswordEl = document.querySelector('#confirmpassword')
 
 const subscribeEl = document.querySelector('#subscribe-email')
@@ -20,11 +21,24 @@ const isBetween = (length, min, max) => length < min || length > max ? false : t
 const checkUsername = () => {
     let valid = false
     const min = 3, max = 25
-    const username = usernameEl.value.trim()
+    const username = registerUsernameEl.value.trim()
     if (!isBetween(username.length, min, max)) {
-        showError(usernameEl, `User name must be between ${min} and ${max} characters.`)
+        showError(registerUsernameEl, `User name must be between ${min} and ${max} characters.`)
     } else {
-        showSuccess(usernameEl)
+        showSuccess(registerUsernameEl)
+        valid = true
+    }
+    return valid
+}
+
+const checkLoginUsername = () => {
+    let valid = false
+    const min = 3, max = 25
+    const username = loginUsernameEl.value.trim()
+    if (!isBetween(username.length, min, max)) {
+        showError(loginUsernameEl, `User name must be between ${min} and ${max} characters.`)
+    } else {
+        showSuccess(loginUsernameEl)
         valid = true
     }
     return valid
@@ -120,18 +134,36 @@ const checkPhoneNumber = () => {
     return valid
 }
 
-const checkPassword = () => {
+const checkRegisterPassword = () => {
     let valid = false
 
-    const password = passwordEl.value.trim()
+    const password = registerPasswordEl.value.trim()
 
     if (!isRequired(password)) {
-        showError(passwordEl, 'Password cannot be blank.')
+        showError(registerPasswordEl, 'Password cannot be blank.')
     } else if (!isPasswordSecure(password)) {
-        showError(passwordEl, 'Password must has at least 8 characters that include at least 1 lowercase' +
+        showError(registerPasswordEl, 'Password must has at least 8 characters that include at least 1 lowercase ' +
             'character, 1 uppercase characters, 1 number, and 1 speacial character in (!@#$%^&*)')
     } else {
-        showSuccess(passwordEl)
+        showSuccess(registerPasswordEl)
+        valid = true
+    }
+
+    return valid
+}
+
+const checkLoginPassword = () => {
+    let valid = false
+
+    const password = loginPasswordEl.value.trim()
+
+    if (!isRequired(password)) {
+        showError(loginPasswordEl, 'Password cannot be blank.')
+    } else if (!isPasswordSecure(password)) {
+        showError(loginPasswordEl, 'Password must has at least 8 characters that include at least 1 lowercase ' +
+            'character, 1 uppercase characters, 1 number, and 1 speacial character in (!@#$%^&*)')
+    } else {
+        showSuccess(loginPasswordEl)
         valid = true
     }
 
@@ -142,7 +174,7 @@ const checkConfirmPassword = () => {
     let valid = false
     // check confirm password
     const confirmPassword = confirmPasswordEl.value.trim()
-    const password = passwordEl.value.trim()
+    const password = registerPasswordEl.value.trim()
 
     if (!isRequired(confirmPassword)) {
         showError(confirmPasswordEl, 'Please enter the password again.')
@@ -199,27 +231,47 @@ const showSuccess = (input) => {
     error.textContent = ''
 }
 
+// SUBMIT REGISTER 
+const register = document.querySelector('.js-submit-register')
 // Eventlistener
-form.addEventListener('submit', function (e) {
+register.addEventListener('click', function (e) {
     // prevent the form from submitting
     e.preventDefault()
 
     // validate fields
     let isUsernameValid = checkUsername(),
         isEmailValid = checkEmail(),
-        isPasswordValid = checkPassword(),
-        isConfirmPasswordValid = checkConfirmPassword(),
-        isPhoneNumber = checkPhoneNumber()
+        isPasswordValid = checkRegisterPassword(),
+        isConfirmPasswordValid = checkConfirmPassword()
 
     let isFormValid = isUsernameValid &&
         isEmailValid &&
         isPasswordValid &&
-        isConfirmPasswordValid &&
-        isPhoneNumber
+        isConfirmPasswordValid
 
     // submit to the server if the form is valid
     if (isFormValid) {
-        
+        alert('Your information has been submitted!');
+    }
+})
+
+// SUBMIT LOGIN 
+const login = document.querySelector('.js-submit-login')
+// Eventlistener
+login.addEventListener('click', function (e) {
+    // prevent the form from submitting
+    e.preventDefault()
+
+    // validate fields
+    let isUsernameValid = checkLoginUsername()
+        isPasswordValid = checkLoginPassword()
+
+    let isFormValid = isUsernameValid &&
+        isPasswordValid
+
+    // submit to the server if the form is valid
+    if (isFormValid) {
+        alert('Your information has been submitted!');
     }
 })
 
@@ -321,26 +373,26 @@ productSubscribeForm.addEventListener('click', function (e) {
 
 // PRODUCT - ORDERBY BUTTON 
 // Show
-const activeBtns = document.querySelectorAll('.js-btn')
-const activeBtn1 = document.querySelector('.btn1')
-const activeBtn2 = document.querySelector('.btn2')
-const activeBtn3 = document.querySelector('.btn3')
+// const activeBtns = document.querySelectorAll('.js-btn')
+// const activeBtn1 = document.querySelector('.btn1')
+// const activeBtn2 = document.querySelector('.btn2')
+// const activeBtn3 = document.querySelector('.btn3')
 
-activeBtn1.addEventListener('click', function() {
-    activeBtns.classList.add('active')
-})
+// activeBtn1.addEventListener('click', function() {
+//     activeBtns.classList.add('active')
+// })
 
-activeBtn2.addEventListener('click', function() {
-    activeBtn1.classList.remove('active')
-    activeBtn2.classList.add('active')
-    activeBtn3.classList.remove('active')
-})
+// activeBtn2.addEventListener('click', function() {
+//     activeBtn1.classList.remove('active')
+//     activeBtn2.classList.add('active')
+//     activeBtn3.classList.remove('active')
+// })
 
-activeBtn2.addEventListener('click', function() {
-    activeBtn1.classList.remove('active')
-    activeBtn2.classList.remove('active')
-    activeBtn3.classList.add('active')
-})
+// activeBtn2.addEventListener('click', function() {
+//     activeBtn1.classList.remove('active')
+//     activeBtn2.classList.remove('active')
+//     activeBtn3.classList.add('active')
+// })
 
 // SEARCH - ORDER BY
 angular.module("app", []);
@@ -387,3 +439,43 @@ angular.module("app").controller("controller", function (){
     ];
     vm.order = vm.orders[0];
 });
+
+// Ex6 form validation 
+
+// let id = (id) => document.getElementById(id);
+
+// let classes = (classes) => document.getElementsByClassName(classes);
+
+// let username = id("username2"),
+//     email = id("email2"),
+//     password = id("password2"),
+//     form2 = id("signup2"),
+//     errorMsg = classes("error2"),
+//     successIcon = classes("success-icon"),
+//     failureIcon = classes("failure-icon");
+
+// form2.addEventListener("submit", (e) => {
+//     e.preventDefault();
+
+//     engine(username, 0, "Username cannot be blank");
+//     engine(email, 1, "Email cannor be blank");
+//     engine(password, 2, "Password cannot be blank");
+// });
+
+// let engine = (id, serial, message) => {
+//     if (id.value.trim() === "") {
+//         errorMsg[serial].innerHTML = message;
+//         id.style.border = "2px solid red";
+
+//         //icons
+//         failureIcon[serial].style.opacity = "1";
+//         successIcon[serial].style.opacity = "0";
+//     } else {
+//         errorMsg[serial].innerHTML = "";
+//         id.style.border = "2px solid green";
+
+//         //icons
+//         failureIcon[serial].style.opacity = "0";
+//         successIcon[serial].style.opacity = "1";
+//     }
+// };
