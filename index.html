@@ -48,10 +48,14 @@
                         <li><a href="brand.html">Brand</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
-                        <li><i class="fa-solid fa-user"></i> <a href="#">Login</a></li>
+                        <label for="login-checkbox" class="header__login-checkbox">
+                            <li><i class="fa-solid fa-user"></i><a>Login</a></li>
+                        </label>
                     </ul>
                 </nav>
             </div>
+            
+            <input type="checkbox" hidden id="login-checkbox" class="header__login-checkbox">
 
             <div class="header__body home-page">
 
@@ -1108,9 +1112,9 @@
                 <p>BrightWorld is a store that sells the world's top-quality LED lights.</p>
                 <blockquote>"Your satisfaction is our pleasure"</blockquote>
                 <div class="footer__social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-google-plus-g"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.facebook.com/phu.tam.7545/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/phu.tam.7545/"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/phu.tam.7545/"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
             <div class="footer__item">
@@ -1175,7 +1179,7 @@
 
         <div class="modal__body">
             <div class="modal__register">
-               
+
                 <!-- <div class="login-form">
                     <div class="login-form__header">
                         <h3 class="login-form__heading">Sign up</h3>
@@ -1189,7 +1193,7 @@
                     </div>
 
                 </div> -->
-                
+
                 <!-- FORM REGISTER  -->
                 <form action="#" id="signup" method="post">
                     <div>
@@ -1201,10 +1205,12 @@
                             </div>
                             <div class="btn">
                                 <div class="btn-1">
-                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png">Connect with Google
+                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png">Connect with
+                                    Google
                                 </div>
                                 <div class="btn-2">
-                                    <img src="http://img.icons8.com/ios-filled/30/ffffff/facebook-new.png">Connect with Facebook
+                                    <img src="http://img.icons8.com/ios-filled/30/ffffff/facebook-new.png">Connect with
+                                    Facebook
                                 </div>
                             </div>
                         </div>
@@ -1214,7 +1220,8 @@
                     <div class="form-field">
                         <label for="register-username">Username</label>
                         <i class="fas fa-user"></i>
-                        <input type="text" name="register-username" id="register-username" placeholder="Enter your user name" required>
+                        <input type="text" name="register-username" id="register-username"
+                            placeholder="Enter your user name" required>
                         <small></small>
                     </div>
                     <!-- Email input -->
@@ -1228,14 +1235,16 @@
                     <div class="form-field">
                         <label for="register-password">Password</label>
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="register-password" id="register-password" placeholder="Enter your password" required>
+                        <input type="password" name="register-password" id="register-password"
+                            placeholder="Enter your password" required>
                         <small></small>
                     </div>
                     <!-- Confirm Password input -->
                     <div class="form-field">
                         <label for="confirmpassword">Confirm Password</label>
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your password" required>
+                        <input type="password" name="confirmpassword" id="confirmpassword"
+                            placeholder="Confirm your password" required>
                         <small></small>
                     </div>
                     <!-- button  -->
@@ -1246,7 +1255,7 @@
                 </form>
             </div>
 
-                <!-- <div class="login-form">
+            <!-- <div class="login-form">
                     <div class="login-form__header">
                         <h3 class="login-form__heading">Sign up</h3>
                         <span class="login-form__switch-btn">Sign in</span>
@@ -1259,8 +1268,8 @@
                     </div>
 
                 </div> -->
-                
-                <!-- FORM LOGIN  -->
+
+            <!-- FORM LOGIN  -->
             <div class="modal__login">
                 <form action="#" id="signup" method="post">
                     <div>
@@ -1272,10 +1281,12 @@
                             </div>
                             <div class="btn">
                                 <div class="btn-1">
-                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png">Connect with Google
+                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png">Connect with
+                                    Google
                                 </div>
                                 <div class="btn-2">
-                                    <img src="http://img.icons8.com/ios-filled/30/ffffff/facebook-new.png">Connect with Facebook
+                                    <img src="http://img.icons8.com/ios-filled/30/ffffff/facebook-new.png">Connect with
+                                    Facebook
                                 </div>
                             </div>
                         </div>
@@ -1285,7 +1296,8 @@
                     <div class="form-field">
                         <label for="login-username">Username</label>
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="login-username" placeholder="Enter your user name" required>
+                        <input type="text" name="username" id="login-username" placeholder="Enter your user name"
+                            required>
                         <small></small>
                     </div>
                     <!-- Email input -->
@@ -1299,7 +1311,8 @@
                     <div class="form-field">
                         <label for="login-password">Password</label>
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="login-password" id="login-password" placeholder="Enter your password" required>
+                        <input type="password" name="login-password" id="login-password"
+                            placeholder="Enter your password" required>
                         <small></small>
                     </div>
                     <span class="form__forget">Forget your password?</span>
@@ -1310,7 +1323,7 @@
                     </div>
                 </form>
             </div>
-            
+
         </div>
     </div>
 

@@ -811,6 +811,10 @@ footer {
     margin-right: 10px;
 }
 
+.footer__social a {
+    color: white;
+}
+
 .footer__social i:hover {
     color: var(--pink-color);
     border-color: var(--pink-color);

@@ -231,6 +231,47 @@ const showSuccess = (input) => {
     error.textContent = ''
 }
 
+// SUBMIT CONTACT
+const contactForm = document.querySelector('.js-submit-contact')
+// Eventlistener
+contactForm.addEventListener('click', function (e) {
+    // prevent the form from submitting
+    e.preventDefault()
+
+    // validate fields
+    let isFirstnameValid = checkFirstname(),
+        isLastnameValid = checkLastname(),
+        isEmailValid = checkEmail(),
+        isPhoneNumber = checkPhoneNumber()
+
+    let isContactValid = isFirstnameValid &&
+        isLastnameValid &&
+        isEmailValid &&
+        isPhoneNumber
+
+    // submit to the server if the contact form is valid
+    if (isContactValid) {
+        alert('Your information has been submitted!');
+    }
+})
+
+// SUBMIT SUBSCRIBE 
+const subscribeForm = document.querySelector('.js-submit-subscribe')
+// Eventlistener
+subscribeForm.addEventListener('click', function (e) {
+    // prevent the form from submitting
+    e.preventDefault()
+
+    // validate fields
+    let isSubscribeEmailValid = checkSubscribeEmail()
+
+    // submit to the server if the subscribe form is valid
+    if (isSubscribeEmailValid) {
+        alert('Your information has been submitted!');
+    }
+})
+
+
 // SUBMIT REGISTER 
 const register = document.querySelector('.js-submit-register')
 // Eventlistener
@@ -314,46 +355,6 @@ form.addEventListener('input', debounce(function (e) {
             break
     }
 }))
-
-// SUBMIT CONTACT 
-const contactForm = document.querySelector('.js-submit-contact')
-// Eventlistener
-contactForm.addEventListener('click', function (e) {
-    // prevent the form from submitting
-    e.preventDefault()
-
-    // validate fields
-    let isFirstnameValid = checkFirstname(),
-        isLastnameValid = checkLastname(),
-        isEmailValid = checkEmail(),
-        isPhoneNumber = checkPhoneNumber()
-
-    let isContactValid = isFirstnameValid &&
-        isLastnameValid &&
-        isEmailValid &&
-        isPhoneNumber
-
-    // submit to the server if the contact form is valid
-    if (isContactValid) {
-        alert('Your information has been submitted!');
-    }
-})
-
-// SUBMIT SUBSCRIBE 
-const subscribeForm = document.querySelector('.js-submit-subscribe')
-// Eventlistener
-subscribeForm.addEventListener('click', function (e) {
-    // prevent the form from submitting
-    e.preventDefault()
-
-    // validate fields
-    let isSubscribeEmailValid = checkSubscribeEmail()
-
-    // submit to the server if the subscribe form is valid
-    if (isSubscribeEmailValid) {
-        alert('Your information has been submitted!');
-    }
-})
 
 // SUBMIT SUBSCRIBE 
 const productSubscribeForm = document.querySelector('.js-product-subscribe')

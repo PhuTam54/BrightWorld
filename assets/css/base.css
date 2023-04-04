@@ -213,8 +213,11 @@ h2 {
     left: 0;
     bottom: 0;
     z-index: 3;
-    display: flex;
     display: none;
+}
+
+.header__login-checkbox:checked~.modal {
+    display: flex;
 }
 
 .modal__overlay {

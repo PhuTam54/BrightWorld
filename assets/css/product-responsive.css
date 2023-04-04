@@ -157,7 +157,8 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .header__mobile-checkbox:checked~.header__search,
-    .header__mobile-checkmenu:checked~.header__navbar {
+    .header__mobile-checkmenu:checked~.header__navbar
+    {
         display: flex;
     }
 
