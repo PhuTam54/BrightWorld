@@ -1,0 +1,30 @@
+.char{
+	display: flex;
+	margin-top: 150px;
+	margin-bottom:100px;
+}
+.about_us .about h1{
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 40px
+}
+.about_us .about p{
+	margin-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 25px;
+}
+.about_us .history p{
+	padding-left: 30px;
+	padding-right: 25px;
+}
+.about_us .team h2{
+	margin-top: 50px;
+}
+.about_us .history h2{
+	margin-bottom: 40px;
+}
+.about_us .team p{
+	padding-left: 30px;
+	padding-right: 25px;
+}
+
