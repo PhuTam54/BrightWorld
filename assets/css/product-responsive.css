@@ -139,7 +139,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .header__search,
-    .header__navbar {
+    .header-mobile__nav {
         position: fixed;
         top: 61px;
         right: 0;
@@ -150,14 +150,14 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         display: none;
     }
 
-    .header__navbar {
+    .header-mobile__nav {
         top: 77px;
         z-index: 1;
         display: none;
     }
 
     .header__mobile-checkbox:checked~.header__search,
-    .header__mobile-checkmenu:checked~.header__navbar
+    .header__mobile-checkmenu:checked~.header-mobile__nav
     {
         display: flex;
     }

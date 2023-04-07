@@ -52,7 +52,7 @@ Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet -- Mobile & Tablet  -- Mo
         display: none;
     }
 
-    .header__navbar {
+    .header-mobile__nav {
         display: flex;
     }
 
@@ -73,54 +73,6 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
     }
 
     /* Header  */
-    /*
-    .header__nav {
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .header__nav .name {
-        color: var(--purple-color);
-    }
-    
-    .header__nav ul {
-        list-style: none;
-    }
-    
-    .header__nav ul li {
-        display: inline;
-        margin: 0 1rem;
-    }
-    
-    .header__nav ul a,
-    .header__nav ul i {
-        text-decoration: none;
-        color: white;
-        font-size: .8rem;
-        font-weight: 510;
-        letter-spacing: 2px;
-        transition: all .5s;
-    }
-    
-    .header__nav ul i {
-        font-size: 1rem;
-    }
-    
-    .header__nav ul li:hover i,
-    .header__nav ul li:hover a {
-        color: var(--pink-color);
-    }
-    
-    .header__nav ul .active a {
-        color: var(--pink-color);
-    }
-    
-    .header__nav ul a:hover {
-        color: var(--pink-color);
-    }
-    */
     /* Logo */
     .header__logo {
         margin: 0 0 0 1.5rem;
@@ -417,17 +369,21 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         display: none;
     }
 
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+
     /* valid -- error */
     .error {
         font-size: .8rem;
     }
 
     /* nav bar  */
-    .home-page .header__navbar {
+    .home-page .header-mobile__nav {
         display: flex;
     }
 
-    .header__navbar {
+    .header-mobile__nav {
         top: auto;
     }
 
@@ -449,10 +405,8 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     /* Menu  */
     .header__checkbox {
         display: flex;
-        width: 100px;
+        width: 100%;
         margin: auto;
-        /* user-select: none;
-        -webkit-user-select: none; */
     }
 
     /* Search */
@@ -473,14 +427,15 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     .header__mobile-menu {
         width: 40px;
         padding: 0px 0 4px 0;
-        /* margin: 0 10px; */
+        margin: auto;
     }
 
     .header__mobile-menu {
-        margin: 0rem 0 0 1rem;
+        margin-left: 1rem;
     }
 
     .header__mobile-search {
+        display: block;
         margin: auto;
     }
 
@@ -498,14 +453,14 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     .header__logo {
         height: 2.5rem;
         /* margin-left: -10px; */
-        margin: auto;
+        margin: 0;
     }
 
     /* Header account*/
     .header__user-cart {
         display: flex;
         width: 100%;
-        margin: auto;
+        margin-right: auto;
     }
 
     .header__account {
@@ -669,6 +624,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     .product__detail-action-sold {
         font-size: .6rem;
         margin-left: 4px;
+        margin-right: 4px;
     }
 
     .product__origin,
@@ -764,6 +720,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     .contact h2 {
         font-size: 1.2rem;
         margin-bottom: 20px;
+        margin-top: 8rem;
     }
 
     .contact__form form {
@@ -840,7 +797,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .footer__item .footer__sub input {
-        font-size: .55rem;
+        font-size: .5rem;
         padding: 10px 0px 10px 5px;
         margin-bottom: 4px;
     }
