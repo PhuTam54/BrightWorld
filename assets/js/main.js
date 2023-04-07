@@ -480,3 +480,5 @@ angular.module("app").controller("controller", function (){
 //         successIcon[serial].style.opacity = "1";
 //     }
 // };
+
+ 

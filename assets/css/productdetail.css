@@ -100,10 +100,7 @@
 }
 
 .productdetail__origin {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem;
-    color: black;
+    display: none;
 }
 
 /* PRODUCT SELECT  */

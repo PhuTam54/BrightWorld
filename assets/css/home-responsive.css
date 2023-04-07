@@ -448,9 +448,9 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
 
     /* Menu  */
     .header__checkbox {
-        width: 100px;
         display: flex;
-        margin: 0 0 0 1rem;
+        width: 100px;
+        margin: auto;
         /* user-select: none;
         -webkit-user-select: none; */
     }
@@ -473,11 +473,15 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     .header__mobile-menu {
         width: 40px;
         padding: 0px 0 4px 0;
-        margin: 0 10px;
+        /* margin: 0 10px; */
     }
 
     .header__mobile-menu {
-        margin: 0;
+        margin: 0rem 0 0 1rem;
+    }
+
+    .header__mobile-search {
+        margin: auto;
     }
 
     .header__mobile-search button:hover {
@@ -493,14 +497,15 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
 
     .header__logo {
         height: 2.5rem;
-        margin-left: -10px;
+        /* margin-left: -10px; */
+        margin: auto;
     }
 
     /* Header account*/
     .header__user-cart {
         display: flex;
         width: 100%;
-        margin: 0;
+        margin: auto;
     }
 
     .header__account {

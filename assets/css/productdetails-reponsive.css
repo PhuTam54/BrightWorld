@@ -1,0 +1,139 @@
+/* Ipad Pro  */
+@media (min-width: 1024px) and (max-width: 1113px) {}
+
+/*Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet -- Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet
+Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet -- Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet
+Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet -- Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet
+Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet -- Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet
+Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet -- Mobile & Tablet  -- Mobile & Tablet -- Mobile & Tablet */
+@media (max-width: 1023px) {}
+
+/*TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET
+TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET
+TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET
+TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET
+TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    /* PRODUCT DETAILS  */
+    .productdetail__contain {
+        width: 80%;
+    }
+
+    /* PRODUCT RELATED  */
+    .related__title {
+        margin: 1rem 1.5rem 1rem;
+    }
+}
+
+/*MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE
+MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE
+MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE
+MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE
+MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE
+ */
+@media (max-width: 739px) {
+    /* PRODUCT DETAILS  */
+.productdetail__contain {
+    padding: 28px 0 1rem;
+    display: block;
+    width: 100%;
+}
+
+.productdetail__img {
+    margin: 0 10px;
+}
+
+/* PRODUCT */
+.productdetail__name {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 10px 6px;
+}
+
+.productdetail__price{
+    margin: 0 10px;
+}
+
+.productdetail__price-old{
+    font-size: 1rem;
+}
+
+.productdetail__price-new{
+    font-size: 1.25rem;
+}
+
+.productdetail__action{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0;
+    align-items: center;
+}
+
+.productdetail__action-like{
+    font-size: 1.1rem;
+}
+
+.productdetail__action-like span {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.productdetail__action-rating {
+    font-size: .9rem;
+}
+
+.productdetail__action-sold {
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.productdetail__origin {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    color: black;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+/* PRODUCT SELECT  */
+.productdetail__select {
+    margin: 10px;
+}
+
+/* DETAILS  */
+.productdetail__detail {
+    line-height: 1.6rem;
+    margin: 10px;
+    font-size: .85rem;
+}
+
+.productdetail__detail h3 {
+    font-size: 1rem;
+    margin: 1rem 0 .5rem;
+}
+
+/* BUTTON  */
+.productdetail-btns {
+    margin: 0 10px;
+}
+
+/* PRODUCT RELATED  */
+.productdetail__related {
+    padding: 1rem 0 1rem;
+}
+
+.related__title {
+    margin: 1rem;
+}
+
+.related__title h4 {
+    font-size: 1rem;
+}
+
+.related__title a {
+    font-size: .85rem;
+}
+
+}
