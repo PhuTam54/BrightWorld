@@ -573,10 +573,10 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         width: 100%;
     }
 
-.cartdetails .cart-list__heading {
-    margin: 1rem;
-    font-size: 1rem;
-}
+    .cartdetails .cart-list__heading {
+        margin: 1rem;
+        font-size: 1rem;
+    }
 
     .cartdetails .info__name {
         font-size: .7rem;
@@ -586,49 +586,49 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         font-weight: 600;
     }
 
-.cartdetails .info__price,
-.cartdetails .info__multiply,
-.cartdetails .info__qty {
-    font-size: .7rem;
-}
+    .cartdetails .info__price,
+    .cartdetails .info__multiply,
+    .cartdetails .info__qty {
+        font-size: .7rem;
+    }
 
-.cartdetails .info__description {
-    font-size: .65rem;
-}
+    .cartdetails .info__description {
+        font-size: .65rem;
+    }
 
-.cartdetails .info__remove {
-    font-size: .7rem;
-    font-weight: 600;
-}
+    .cartdetails .info__remove {
+        font-size: .7rem;
+        font-weight: 600;
+    }
 
-.cartdetails .info__remove:hover {
-    color: var(--pink-color);
-}
+    .cartdetails .info__remove:hover {
+        color: var(--pink-color);
+    }
 
-.cart-list__table {
-    justify-content: center;
-}
+    .cart-list__table {
+        justify-content: center;
+    }
 
-.cartdetails .cart-list__table table {
-    width: 100%;
-    border-collapse: collapse;
-    border-top: 3px solid var(--pink-color);
-    max-width: 350px;
-    margin-top: 1rem;
-}
+    .cartdetails .cart-list__table table {
+        width: 100%;
+        border-collapse: collapse;
+        border-top: 3px solid var(--pink-color);
+        max-width: 350px;
+        margin-top: 1rem;
+    }
 
-.cartdetails .cart-list__table table tr td {
-    line-height: 1.5rem;
-    font-size: .75rem;
-}
+    .cartdetails .cart-list__table table tr td {
+        line-height: 1.5rem;
+        font-size: .75rem;
+    }
 
-.cartdetails .cart-list__table td:last-child {
-    text-align: right;  
-}
+    .cartdetails .cart-list__table td:last-child {
+        text-align: right;
+    }
 
-.cartdetails .cart-list__btn {
-    margin: 1rem 1.3rem 1rem;
-}
+    .cartdetails .cart-list__btn {
+        margin: 1rem 1.3rem 1rem;
+    }
 
     /* Carousel  */
     .carousel .item1,
@@ -833,7 +833,11 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     .testimonials__content p:last-of-type {
         letter-spacing: 1px;
         margin-top: 4px;
-        margin-bottom: -10px;
+        margin-bottom: 0px;
+    }
+
+    .testimonials .owl-dots {
+        display: none;
     }
 
     /* CONTACT  */
