@@ -331,13 +331,13 @@ header {
 
 /* CARTLIST DETAILS  */
 .cartdetails {
-    padding: 130px 0 90px;
+    padding: 150px 0 90px;
     width: 70%;
     margin: auto;
 }
 
 .cartdetails .cart-list__heading {
-    margin: 1.3rem 1rem 0;
+    margin: 2rem 1rem 1rem;
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--purple-color);
@@ -373,7 +373,7 @@ header {
     font-weight: 500;
     height: 3rem;
     line-height: 1.5rem;
-    width: 600px;
+    width: 1000px;
 }
 
 .cartdetails .info__price,
