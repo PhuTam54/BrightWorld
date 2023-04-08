@@ -352,8 +352,8 @@ header {
 }
 
 .cartdetails .cart-list__img {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .cartdetails .cart-list__info {
@@ -373,7 +373,7 @@ header {
     font-weight: 500;
     height: 3rem;
     line-height: 1.5rem;
-    width: 1000px;
+    width: 900px;
 }
 
 .cartdetails .info__price,

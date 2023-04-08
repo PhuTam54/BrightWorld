@@ -32,6 +32,17 @@
         bottom: -6px;
     }
 
+    /* cart details  */
+    .cartdetails {
+        padding: 130px 0 90px;
+        width: 80%;
+    }
+
+    .cartdetails .info__name {
+        width: 600px;
+    }
+
+
     /* FOOTER  */
     .footer__main {
         width: 90%;
@@ -270,7 +281,7 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
 
     /* CONTACT  */
     .contact {
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
 
     .contact h2 {
