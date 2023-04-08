@@ -506,6 +506,57 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         z-index: 3;
     }
 
+    /* Product added  */
+    .cart-list__heading {
+        margin: .8rem;
+        font-size: .8rem;
+    }
+
+    .cart-list__items li {
+        margin: .3rem;
+    }
+
+    .cart-list__img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .cart-list__info {
+        margin-left: .5rem;
+    }
+
+    .info__name {
+        font-size: .7rem;
+        font-weight: 600;
+        justify-content: space-between;
+        height: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .info__price,
+    .info__multiply,
+    .info__qty {
+        font-size: .7rem;
+        font-weight: 300;
+    }
+
+    .info__price {
+        margin-left: unset;
+    }
+
+    .info__description {
+        font-size: .65rem;
+    }
+
+    .info__remove {
+        font-size: .7rem;
+    }
+
+    .cart-list__btn {
+        margin: 8px;
+        font-size: .75rem;
+    }
+
     /* Carousel  */
     .carousel .item1,
     .carousel .item2,

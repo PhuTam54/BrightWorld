@@ -17,7 +17,6 @@
     display: grid;
     grid-template-columns: repeat(4, 24%);
     gap: 1%;
-
 }
 
 .productdetail__info {
@@ -32,7 +31,6 @@
     color: black;
     line-height: 1.8rem;
     margin: 0 1rem 6px;
-    /* display: block; */
 }
 
 .productdetail__price{

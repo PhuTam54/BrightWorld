@@ -222,12 +222,15 @@ header {
 .info__name {
     font-size: .9rem;
     font-weight: 600;
-    overflow: hidden;
     justify-content: space-between;
     height: 1.2rem;
     line-height: 1.2rem;
     margin-right: 1.5rem;
     text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .info__price,
@@ -279,7 +282,6 @@ header {
     margin: -8px 8px 8px;
 }
 
-
 .empty-cart {
     padding: 10px 0px 30px 0px;
 }
@@ -302,7 +304,7 @@ header {
     font-weight: 600;
 }
 
-.header__body .cart {
+.header__body .cart-icon {
     text-align: center;
 }
 
@@ -324,6 +326,97 @@ header {
 
 .header__account {
     display: none;
+}
+
+/* CARTLIST DETAILS  */
+.cartdetails {
+    padding: 150px 0 80px;
+    width: 85%;
+    margin: auto;
+}
+
+.cartdetails .cart-list__heading {
+    margin: 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--purple-color);
+}
+
+.cartdetails .cart-list__items {
+
+}
+
+.cartdetails .cart-list__items li {
+
+}
+
+.cartdetails .cart-list__img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.cartdetails .cart-list__info {
+    margin-left: 1rem;
+}
+
+.cartdetails .info__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -1rem 0 0;
+}
+
+.cartdetails .info__name {
+    font-size: 1rem;
+    font-weight: 500;
+    height: 3rem;
+    line-height: 3rem;
+    width: 800px;
+}
+
+.cartdetails .info__price,
+.cartdetails .info__multiply,
+.cartdetails .info__qty {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.cartdetails .info__price {
+    margin-left: 1rem;
+}
+
+.cartdetails .info__multiply {
+    margin: 0 4px;
+    color: #989494;
+}
+
+.cartdetails .info__qty {
+    color: #989494;
+}
+
+.cartdetails .info__body {
+    margin: 8px 0 -4px;
+}
+
+.cartdetails .info__description {
+    font-size: .75rem;
+    color: #766f6f;
+}
+
+.cartdetails .info__remove {
+    font-size: .9rem;
+    font-weight: 400;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.cartdetails .info__remove:hover {
+    color: var(--pink-color);
+}
+
+.cartdetails .cart-list__btn {
+    float: right;
+    margin: 1rem;
 }
 
 /* HEADER NAV BAR on mobile & tablet */
