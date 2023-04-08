@@ -184,6 +184,7 @@ header {
     margin: 1rem;
     font-size: .9rem;
     font-weight: 400;
+    color: var(--purple-color);
 }
 
 .cart-list__items {
@@ -330,13 +331,13 @@ header {
 
 /* CARTLIST DETAILS  */
 .cartdetails {
-    padding: 150px 0 80px;
-    width: 85%;
+    padding: 130px 0 90px;
+    width: 70%;
     margin: auto;
 }
 
 .cartdetails .cart-list__heading {
-    margin: 1.6rem;
+    margin: 1.3rem 1rem 0;
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--purple-color);
@@ -347,12 +348,12 @@ header {
 }
 
 .cartdetails .cart-list__items li {
-
+    width: 100%;
 }
 
 .cartdetails .cart-list__img {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 .cartdetails .cart-list__info {
@@ -364,14 +365,15 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: -1rem 0 0;
+    width: 100%;
 }
 
 .cartdetails .info__name {
     font-size: 1rem;
     font-weight: 500;
     height: 3rem;
-    line-height: 3rem;
-    width: 800px;
+    line-height: 1.5rem;
+    width: 600px;
 }
 
 .cartdetails .info__price,
@@ -395,7 +397,10 @@ header {
 }
 
 .cartdetails .info__body {
+    width: 100%;
     margin: 8px 0 -4px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cartdetails .info__description {
@@ -414,9 +419,38 @@ header {
     color: var(--pink-color);
 }
 
+.cartdetails .cart-list__total {
+    text-align: right;
+}
+
+.cart-list__table {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cartdetails .cart-list__table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 3px solid var(--pink-color);
+    max-width: 350px;
+    margin-top: 1rem;
+}
+
+.cartdetails .cart-list__table table tr td {
+    line-height: 2rem;
+}
+
+.cartdetails .cart-list__total {
+    color: var(--pink-color);
+}
+
+.cartdetails .cart-list__table td:last-child {
+    text-align: right;  
+}
+
 .cartdetails .cart-list__btn {
     float: right;
-    margin: 1rem;
+    margin: 1rem 0 1rem;
 }
 
 /* HEADER NAV BAR on mobile & tablet */

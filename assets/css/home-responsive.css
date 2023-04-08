@@ -121,6 +121,16 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
         z-index: 1;
     }
 
+    /* cart details  */
+    .cartdetails {
+        padding: 130px 0 90px;
+        width: 80%;
+    }
+
+    .cartdetails .info__name {
+        width: 400px;
+    }
+
     /* Product */
     .product {
         padding: 30px 0;
@@ -556,6 +566,69 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         margin: 8px;
         font-size: .75rem;
     }
+
+    /* cart details  */
+    .cartdetails {
+        padding: 130px 0 90px;
+        width: 100%;
+    }
+
+.cartdetails .cart-list__heading {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+    .cartdetails .info__name {
+        font-size: .7rem;
+        height: 2.4rem;
+        line-height: 1.2rem;
+        width: 150px;
+        font-weight: 600;
+    }
+
+.cartdetails .info__price,
+.cartdetails .info__multiply,
+.cartdetails .info__qty {
+    font-size: .7rem;
+}
+
+.cartdetails .info__description {
+    font-size: .65rem;
+}
+
+.cartdetails .info__remove {
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.cartdetails .info__remove:hover {
+    color: var(--pink-color);
+}
+
+.cart-list__table {
+    justify-content: center;
+}
+
+.cartdetails .cart-list__table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 3px solid var(--pink-color);
+    max-width: 350px;
+    margin-top: 1rem;
+}
+
+.cartdetails .cart-list__table table tr td {
+    line-height: 1.5rem;
+    font-size: .75rem;
+}
+
+.cartdetails .cart-list__table td:last-child {
+    text-align: right;  
+}
+
+.cartdetails .cart-list__btn {
+    margin: 1rem 1.3rem 1rem;
+}
 
     /* Carousel  */
     .carousel .item1,
