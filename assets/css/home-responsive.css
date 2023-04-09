@@ -595,6 +595,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
         line-height: 1.2rem;
         width: 150px;
         font-weight: 600;
+        -webkit-line-clamp: 2;
     }
 
     .cartdetails .info__price,

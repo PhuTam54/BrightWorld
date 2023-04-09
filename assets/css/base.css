@@ -213,7 +213,8 @@ h2 {
     left: 0;
     bottom: 0;
     z-index: 3;
-    display: none;
+    /* display: none; */
+    display: flex;
 }
 
 .header__login-checkbox:checked~.modal {
@@ -229,11 +230,8 @@ h2 {
 
 .modal__body {
     background-color: white;
+    position: relative;
     margin: auto;
     z-index: 1;
     border-radius: 4px;
-}
-
-.modal__login {
-    display: none;
 }
