@@ -166,7 +166,6 @@ header {
     top: calc(100% + 20px);
     right: 60px;
     background-color: white;
-    /* width: 450px; */
     width: 550px;
     border-radius: 4px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
@@ -244,7 +243,7 @@ header {
 .info__price {
     color: var(--pink-color);
     font-size: .9rem;
-    margin-left: 5rem;
+    margin-left: 8rem;
 }
 
 .info__multiply {

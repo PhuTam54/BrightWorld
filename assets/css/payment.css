@@ -1,5 +1,5 @@
 .container{
-    width: 100vw;
+    width: 100%;
 	min-height: 100vh;
 	background: #34495e;
 	font-size: 1.2rem;
@@ -57,7 +57,7 @@ form img {
 	padding: 0.7rem 1.5rem;
 	color: white;
 	outline: none;
-	margin-top: 1rem;
+	margin: 1rem auto 0;
 	cursor: pointer;
 }
 

@@ -562,7 +562,7 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     .info__price {
-        margin-left: unset;
+        margin-left: 1.5rem;
     }
 
     .info__description {
@@ -960,4 +960,17 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     .footer__coppyright span {
         font-size: .55rem;
     }
+
+    /* payment  */
+    .container .left form{
+        padding: 0rem;
+    }
+
+    .container .right form{
+        padding: 0rem;
+    }
+
+    .container h3{
+        margin: 1rem -.5rem;
+        }
 }
