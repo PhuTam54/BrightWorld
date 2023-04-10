@@ -105,8 +105,6 @@ INSERT INTO [Admin] VALUES
 (1, 'phutam99', 'phutam99@gmail.com', '@Aa9954')
 GO
 
-SELECT * FROM Customer
-
 INSERT INTO Product VALUES
 (1, 'Christmas Party Light Auto Rotating Red Green Blue LED Projector Stage', 'Laser source: 532nm blue light laser, 650nm . red light laser
 Laser power: (green light 50mW, red light 100mW)
@@ -138,23 +136,17 @@ IP: 44
 Warranty: 2 years', 'unit' , '18.99', '199', 4)
 GO
 
-SELECT * FROM Product
-
 INSERT INTO [Order] VALUES
 (1, 1, '11-4-2023', '4'),
 (2, 1, '11-4-2023', '3'),
 (3, 2, '10-4-2023', '4')
 GO
 
-SELECT * FROM [Order]
-
 INSERT INTO Order_detail VALUES
 (1, 2, '10.55', '2'),
 (2, 1, '16.55' , '1'),
 (3, 3, '15.55', '1')
 GO
-
-SELECT * FROM Order_detail
 
 select * from Customer
 select * from [Admin]
