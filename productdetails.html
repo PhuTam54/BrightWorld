@@ -43,9 +43,9 @@
                         <li><a href="brand.html">Brand</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
-                        <label for="login-checkbox" class="header__login-checkbox">
-                            <li><i class="fa-solid fa-user"></i><a>Login</a></li>
-                        </label>
+                        <li class="btnLogin-popup">
+                            <a><i class="fa-solid fa-user"></i>Login</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -120,7 +120,8 @@
                                     <img src="assets/img/led3.jpg" alt="" class="cart-list__img">
                                     <div class="cart-list__info">
                                         <div class="info__heading">
-                                            <h5 class="info__name">2700K Yellow Light (Nanoco NST1202 8W Led String Light)</h5>
+                                            <h5 class="info__name">2700K Yellow Light (Nanoco NST1202 8W Led String
+                                                Light)</h5>
                                             <span class="info__price">$10.55</span>
                                             <span class="info__multiply">x</span>
                                             <span class="info__qty">2</span>
@@ -173,7 +174,7 @@
                         </div>
                     </div>
 
-                    <div class="header__account">
+                    <div class="header__account btnAccountLogin-popup">
                         <div class="account">
                             <i class="fa-solid fa-user"></i>
                         </div>
@@ -228,17 +229,6 @@
                 </div>
 
                 <div class="productdetail__select">
-                    <select>
-                        <option>Color</option>
-                        <option>Red</option>
-                        <option>Green</option>
-                        <option>Blue</option>
-                        <option>Purple</option>
-                        <option>Orange</option>
-                        <option>Aqua</option>
-                        <option>White</option>
-                        <option>Yellow</option>
-                    </select>
                     <span>Quantity</span>
                     <i class="fa-solid fa-minus"></i>
                     <input type="number" value="1">
@@ -249,8 +239,9 @@
                     <button type="button" class="btn-cart"> add to cart
                         <span><i class="fas fa-plus"></i></span>
                     </button>
-                    <a href="cartdetails.html"><button type="button" class="btn-buy"> buy now
-                        <span><i class="fas fa-shopping-cart"></i></span></a>
+                    <a href="cartdetails.html">
+                        <button type="button" class="btn-buy"> buy now
+                            <span><i class="fas fa-shopping-cart"></i></span></a>
                     </button>
                 </div>
 
@@ -639,49 +630,16 @@
 
         <div class="modal__body">
             <div class="modal__register">
-
-                <!-- <div class="login-form">
-                    <div class="login-form__header">
-                        <h3 class="login-form__heading">Sign up</h3>
-                        <span class="login-form__switch-btn">Sign in</span>
-                    </div>
-
-                    <div class="login-form__form">
-                        <div class="login-form__group">
-                            <input type="text" class="login-form__input">
-                        </div>
-                    </div>
-
-                </div> -->
-
                 <!-- FORM REGISTER  -->
                 <form action="#" id="signup" method="post">
-                    <div>
-                        <div class="social">
-                            <!-- <div class="title">Get Started</div> -->
-                            <div class="question">
-                                Already have an account?<br>
-                                <span>Sign In</span>
-                            </div>
-                            <div class="btn">
-                                <div class="btn-1">
-                                    <img src="https://img.icons8.com/color/48/000000/google-logo.png">Connect with
-                                    Google
-                                </div>
-                                <div class="btn-2">
-                                    <img src="http://img.icons8.com/ios-filled/30/ffffff/facebook-new.png">Connect with
-                                    Facebook
-                                </div>
-                            </div>
-                        </div>
-                        <div class="or">Or</div>
-                    </div>
+                    <span class="register-close"><i class="fa-solid fa-xmark"></i></span>
+                    <h2>Registration</h2>
                     <!-- Username input -->
                     <div class="form-field">
                         <label for="register-username">Username</label>
                         <i class="fas fa-user"></i>
                         <input type="text" name="register-username" id="register-username"
-                            placeholder="Enter your user name" required>
+                            placeholder="Enter your username" required>
                         <small></small>
                     </div>
                     <!-- Email input -->
@@ -709,36 +667,15 @@
                     </div>
                     <!-- button  -->
                     <div class="form__button">
-                        <button type="">BACK</button>
                         <button class="js-submit-register" type="submit">SUBMIT</button>
                     </div>
-                </form>
-            </div>
-
-            <!-- <div class="login-form">
-                    <div class="login-form__header">
-                        <h3 class="login-form__heading">Sign up</h3>
-                        <span class="login-form__switch-btn">Sign in</span>
-                    </div>
-
-                    <div class="login-form__form">
-                        <div class="login-form__group">
-                            <input type="text" class="login-form__input">
-                        </div>
-                    </div>
-
-                </div> -->
-
-            <!-- FORM LOGIN  -->
-            <div class="modal__login">
-                <form action="#" id="signup" method="post">
                     <div>
                         <div class="social">
-                            <!-- <div class="title">Get Started</div> -->
                             <div class="question">
                                 Already have an account?<br>
-                                <span>Sign Up</span>
+                                <span class="login-link">Login</span>
                             </div>
+                            <div class="or">Or</div>
                             <div class="btn">
                                 <div class="btn-1">
                                     <img src="https://img.icons8.com/color/48/000000/google-logo.png">Connect with
@@ -750,41 +687,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="or">Or</div>
-                    </div>
-                    <!-- Username input -->
-                    <div class="form-field">
-                        <label for="login-username">Username</label>
-                        <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="login-username" placeholder="Enter your user name"
-                            required>
-                        <small></small>
-                    </div>
-                    <!-- Email input -->
-                    <!-- <div class="form-field">
-                        <label for="email">Email</label>
-                        <i class="far fa-envelope"></i>
-                        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
-                        <small></small>
-                    </div> -->
-                    <!-- Password input -->
-                    <div class="form-field">
-                        <label for="login-password">Password</label>
-                        <i class="fas fa-lock"></i>
-                        <input type="password" name="login-password" id="login-password"
-                            placeholder="Enter your password" required>
-                        <small></small>
-                    </div>
-                    <span class="form__forget">Forget your password?</span>
-                    <!-- button  -->
-                    <div class="form__button">
-                        <button type="">BACK</button>
-                        <button class="js-submit-login" type="submit">SUBMIT</button>
+
                     </div>
                 </form>
-            </div>
 
-        </div>
+            </div>
     </div>
 
     <!-- ------js for product gallery----- -->
@@ -805,46 +712,6 @@
             productImg.src = smallProductImg[3].src;
         } 
     </script>
-
-    <!-- Jquery hỗ trợ chạy hiệu ứng của
-            các thư viện animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Jquery Waypoints: Hàm hỗ trợ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- CountUp JS  -->
-    <script src="assets/js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
-
-    <!-- LIGHT BOX  -->
-    <script src="assets/js/lightbox.min.js"></script>
-
-    <!-- OWL CAROUSEL -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            nav: true,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1
-                }
-            }
-        })
-    </script>
-
-    <!-- MAIN JS  -->
-    <script src="assets/js/main.js"></script>
 
 </body>
 

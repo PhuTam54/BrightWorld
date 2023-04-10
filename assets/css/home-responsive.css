@@ -281,7 +281,7 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
 
     /* CONTACT  */
     .contact {
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 
     .contact h2 {
@@ -299,7 +299,6 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
 
     .contact__form input {
         font-size: .8rem;
-        font-weight: 500;
     }
 
     .contact__map {
@@ -312,7 +311,6 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
 
     .contact__info p {
         font-size: 0.7rem;
-        font-weight: 500;
         margin: 8px 0;
     }
 

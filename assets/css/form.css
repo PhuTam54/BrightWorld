@@ -4,6 +4,7 @@
 }
 
 .modal__body {
+    width: 500px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
@@ -22,7 +23,7 @@
 }
 
 .modal__body.active {
-    height: 644px;    
+    height: 730px;    
 }
 
 .modal__body .modal__register {
