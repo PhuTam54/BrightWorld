@@ -1,0 +1,186 @@
+.led_light {
+    padding-top: 150px;
+    background-color: #f3f0f0;
+}
+
+.led_light h1 {
+    color: var(--purple-color);
+}
+
+.head {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.philips h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.philips p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+img {
+    width: 400px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.panasonic h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.panasonic p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cree h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.cree p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sylvania h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.sylvania p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.osram h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.osram p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.zumtobel h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.zumtobel p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media (max-width: 739px) { 
+    .led_light p {
+        font-size: .9rem;
+    }
+
+    .head {
+        padding-left: 20px;
+        padding-right: 0px;
+        font-size: .9rem;
+    }
+    
+    .philips h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .philips p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    img {
+        width: 300px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .panasonic h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .panasonic p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .cree h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .cree p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .sylvania h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .sylvania p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .osram h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .osram p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .zumtobel h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .zumtobel p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}

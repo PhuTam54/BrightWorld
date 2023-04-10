@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <title>BrightWorld</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT GOOGLE  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!-- BASE, MAIN CSS  -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/home-responsive.css">
+    <link rel="stylesheet" href="assets/css/product-responsive.css">
+    <link rel="stylesheet" href="assets/css/brand.css">
+
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <div class="header__contain">
+
+            <div class="header__nav">
+                <div class="name">PhuTam</div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li class="active"><a href="brand.html">Brand</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><i class="fa-solid fa-user"></i> <a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__body home-page">
+
+                <ul class="header-mobile__nav">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="product.html" class="navbar__link">Product</a>
+                    </li>
+                    <li class="navbar__item active">
+                        <a href="brand.html" class="navbar__link">Brand</a>
+                    </li>
+                    <li class="navbar__item ">
+                        <a href="contact.html" class="navbar__link">Contact</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="aboutus.html" class="navbar__link">About Us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Login</a>
+                    </li>
+                </ul>
+
+                <div class="header__checkbox">
+                    <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <a href="product.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </label>
+                </div>
+
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-checkbox">
+
+                <div class="header__logo" style="background-image: url(assets/img/logo.png);">
+                    <p><span>.</span> Bright<span>World</span></p>
+                </div>
+
+                <div class="header__search hide-on-mobile">
+                    <a href="product.html">
+                        <input type="text" placeholder="Search here (Go to Product)" ng-model="main.searchInput">
+                        <button>
+                            <a href="product.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </button></a>
+                </div>
+
+                <div class="header__user-cart">
+                    <div class="header__cart">
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span class="cart-number">3</span>
+                        <div class="cart-list">
+                            <!-- Emty cart: class= "empty-cart"-->
+                            <img src="assets/img/empty-cart.png" alt="" class="empty-cart-img">
+                            <span class="empty-cart-msg">No product</span>
+
+                            <!-- Products Added -->
+                            <h4 class="cart-list__heading">Products In Cart</h4>
+                            <ul class="cart-list__items">
+                                <!-- item1  -->
+                                <li>
+                                    <img src="assets/img/led3.jpg" alt="" class="cart-list__img">
+                                    <div class="cart-list__info">
+                                        <div class="info__heading">
+                                            <h5 class="info__name">2700K Yellow Light (Nanoco NST1202 8W Led String
+                                                Light)</h5>
+                                            <span class="info__price">$10.55</span>
+                                            <span class="info__multiply">x</span>
+                                            <span class="info__qty">2</span>
+                                        </div>
+
+                                        <div class="info__body">
+                                            <span class="info__description">Type: Decoration Light</span>
+                                            <span class="info__remove">Remove</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- item2  -->
+                                <li>
+                                    <img src="assets/img/sp3.jfif" alt="" class="cart-list__img">
+                                    <div class="cart-list__info">
+                                        <div class="info__heading">
+                                            <h5 class="info__name">18W LED Bulb - SBNL518</h5>
+                                            <span class="info__price">$18.55</span>
+                                            <span class="info__multiply">x</span>
+                                            <span class="info__qty">1</span>
+                                        </div>
+
+                                        <div class="info__body">
+                                            <span class="info__description">Type: Bulb</span>
+                                            <span class="info__remove">Remove</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- item3  -->
+                                <li>
+                                    <img src="assets/img/sp1.png" alt="" class="cart-list__img">
+                                    <div class="cart-list__info">
+                                        <div class="info__heading">
+                                            <h5 class="info__name">Christmas Party Light Auto Rotating Red Green Blue
+                                                LED Projector Stage</h5>
+                                            <span class="info__price">$19.55</span>
+                                            <span class="info__multiply">x</span>
+                                            <span class="info__qty">1</span>
+                                        </div>
+
+                                        <div class="info__body">
+                                            <span class="info__description">Type: Decoration Light</span>
+                                            <span class="info__remove">Remove</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="cartdetails.html"><button class="cart-list__btn">View Cart</button></a>
+
+                        </div>
+                    </div>
+
+                    <div class="header__account btnAccountLogin-popup">
+                        <div class="account">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="led_light">
+        <div class="head">
+            <p>Light bulbs in general have long become important items in our human life. With the continuous development of science and technology, people are increasingly upgrading the surrounding objects, including light bulbs. LED lights are the result of that process. Let's take a look at 10 famous led light brands in the world along with their journey of "conquering the light"!</p>
+        </div>
+        <div class="philips">
+            <h1>Philips LED light brand</h1>
+            <p>Philips is known as a large Dutch corporation, mainly operating in areas such as consumer life, health care and lighting equipment manufacturing and trading. Established in the late 19th century, the Philips brand has always stood firmly in the market with high quality lighting equipment. The peak was in 2012, this royal corporation had the top revenue in the world in the field of manufacturing lighting equipment: led lights, table lamps,... Philips truly deserves the title. "The most famous LED brand in the world".</p>
+            <img src="https://ledhoadang.vn/upload/SEO/thuong-hieu-den-led-noi-tieng-1.jpg" alt="">
+        </div>
+        <div class="panasonic">
+            <h1>Panasonic LED light brand</h1>
+            <p>It would be remiss not to mention the famous led brand Panasonic in this list. Panasonic Corporation is the parent company of a chain of companies specializing in the production and sales of high-performance lighting equipment. It was this subsidiary that created electronic ballast control systems for CFLs as well as fluorescent lamps. These components are used in many countries around the world.</p>
+            <img src="https://ledhoadang.vn/upload/SEO/thuong-hieu-den-led-noi-tieng-2.jpg" alt="">
+        </div>
+        <div class="cree">
+            <h1>Cree LED Lights</h1>
+            <p>Cree is a famous brand of distribution founded by researchers at North Carolina State University, USA. The key products of this brand are semiconductor devices for the LED lighting industry and export of high-value products to other countries. Cree once "shocked" when it released XLamp XT-E technology, capable of providing twice as much light as LED products at the same price.</p>
+            <img src="https://ledhoadang.vn/upload/SEO/thuong-hieu-den-led-noi-tieng-3.jpg" alt="">
+        </div>
+        <div class="sylvania">
+            <h1>Havells Sylvania</h1>
+            <p>Havells Sylvania is also one of the world's leading famous led lighting companies with subsidiaries distribution across many countries in all continents: Europe, Asia, North Africa, Central and South America. Havells Sylvania was established in 1900 with a long-term effort: from a supplier of lamp replacement services to developing into a manufacturer and distributor.</p>
+            <img src="https://ledhoadang.vn/upload/SEO/thuong-hieu-den-led-noi-tieng-4.jpg" alt="">
+        </div>
+        <div class="osram">
+            <h1>OSRAM</h1>
+            <p>OSRAM Multinational Corporation - OSRAM Light AG was officially established in 1906 with the main field of activity is manufacturing and trading lighting equipment. The name OSRAM is a combination of two words "Osmium" and "Wolfram" - two elements widely used in the lighting industry at that time.</p>
+            <img src="https://ledhoadang.vn/upload/SEO/thuong-hieu-den-led-noi-tieng-5.jpg" alt="">
+        </div>
+        <div class="zumtobel">
+            <h1>Zumtobel</h1>
+            <p>Zumtobel – one of the famous led light brands in the world with many years of experience in the field of lighting industry. Its products usually focus on indoor and outdoor lighting systems as well as other components. Besides, this brand of products from Austria is also involved in the research of current advanced LED and OLED technology.</p>
+            <img src="https://ledhoadang.vn/upload/SEO/thuong-hieu-den-led-noi-tieng-6.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS  -->
+    <section class="testimonials">
+        <h2>TESTIMONIALS</h2>
+        <div class="testimonials__content">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <p><i class="fa-solid fa-quote-left"></i>BrightWorld desires to satisfy every customer with
+                        high-quality products from many famous brands worldwide. Your satisfaction is our pleasure.<i
+                            class="fa-solid fa-quote-right"></i></p>
+                    <p>CEO Phú Tâm</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa-solid fa-quote-left"></i>I love BrightWorld so much. Good product quality and very
+                        attentive service. Thank you for the great led products, good luck.<i
+                            class="fa-solid fa-quote-right"></i></p>
+                    <p>Logan Lee</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa-solid fa-quote-left"></i>BrightWorld is the most prestigious LED shop today, each
+                        product is carefully selected and high quality.<i class="fa-solid fa-quote-right"></i></p>
+                    <p>Chu Diệp Linh</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="footer__main">
+            <div class="footer__item">
+                <h3>About Us</h3>
+                <p>BrightWorld is a store that sells the world's top-quality LED lights.</p>
+                <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/phu.tam.7545/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/phu.tam.7545/"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/phu.tam.7545/"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h3>Working Time</h3>
+                <div class="footer__time">
+                    <p>Monday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Tuesday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Wednesday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Thursday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Friday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Saturday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+                <div class="footer__time">
+                    <p>Sunday</p>
+                    <p>9h30 - 18h30</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h3>Contact Us</h3>
+                <p>Hà Nội branch <br>(+84) 1234-5678 <br>phutam@gmail.com </p>
+                <p>Hồ Chí Minh branch <br>(+84) 6666-8888 <br>cdl@gmail.com </p>
+                <p>Los Angeles branch <br>(213) 054-2004 <br>loganlee@gmail.com </p>
+            </div>
+            <div class="footer__item">
+                <h3>Subscribe Us</h3>
+                <form class="footer__sub" action="#" id="signup" method="post">
+                    <div class="form-field">
+                        <input type="email" name="email" id="subscribe-email" placeholder="name@example.com"><br>
+                        <small></small>
+                    </div>
+                    <button class="js-submit-subscribe" type="submit">Send</button>
+                </form>
+                <p>Sign up now to receive notifications as soon as a new product is added.</p>
+            </div>
+        </div>
+        <div class="footer__coppyright">
+            <p>&copy; Copyright belongs to group 1 "The Time Boys" | Design by <span>Phú Tâm</span></p>
+        </div>
+    </footer>
+
+    <!-- Jquery hỗ trợ chạy hiệu ứng của
+            các thư viện animation -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!-- Jquery Waypoints: Hàm hỗ trợ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+            integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <!-- CountUp JS  -->
+        <script src="assets/js/jquery.countup.js"></script>
+        <script>
+            $('.counter').countUp();
+        </script>
+
+        <!-- OWL CAROUSEL -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
+                }
+            })
+        </script>
+</body>
+
+</html>
