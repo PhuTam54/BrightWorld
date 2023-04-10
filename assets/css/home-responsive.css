@@ -960,15 +960,15 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     }
 
     /* payment  */
-    .container .left form{
+    .container .left form {
         padding: 0rem;
     }
 
-    .container .right form{
+    .container .right form {
         padding: 0rem;
     }
 
-    .container h3{
+    .container h3 {
         margin: 1rem -.5rem;
-        }
+    }
 }
