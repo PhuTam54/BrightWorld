@@ -104,6 +104,7 @@
 /* PRODUCT SELECT  */
 .productdetail__select {
     margin: 1rem;
+    display: flex;
 }
 
 .productdetail__select select:focus,
@@ -123,8 +124,28 @@
 }
 
 .productdetail__select input {
-    width: 70px;
+    width: 60px;
     padding: 0 0 0 10px;
+}
+
+.productdetail__select span {
+    line-height: 40px;
+    margin: 0 8px 0;
+    font-weight: 400;
+}
+
+.productdetail__select i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-right: 0;
+}
+
+.productdetail__select i:last-of-type {
+    border-right: 1px solid black;
+    border-left: 0;
 }
 
 /* DETAILS  */
@@ -166,9 +187,19 @@
     background-color: white;
 }
 
+.productdetail-btns .btn-buy:hover a {
+    color: black;
+}
+
 .productdetail-btns {
     margin: 0 1rem;
     display: flex;
+}
+
+.productdetail-btns a{
+    text-decoration: none;
+    color: white;
+    transition: color .3s;
 }
 
 /* PRODUCT RELATED  */

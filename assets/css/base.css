@@ -213,8 +213,8 @@ h2 {
     left: 0;
     bottom: 0;
     z-index: 3;
-    /* display: none; */
     display: flex;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__login-checkbox:checked~.modal {

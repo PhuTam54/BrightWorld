@@ -374,6 +374,7 @@ header {
     height: 3rem;
     line-height: 1.5rem;
     width: 900px;
+    -webkit-line-clamp: 2;
 }
 
 .cartdetails .info__price,
