@@ -200,7 +200,7 @@ header {
 }
 
 .cart-list__items li:hover {
-    background-color: #f3f0f0;
+    background-color: #f0f0f0;
 }
 
 .cart-list__img {
@@ -465,7 +465,7 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 1px solid #f3f0f0;
+    border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #d1c8c8;
 }
 
@@ -553,7 +553,7 @@ header {
 
 /* PRODUCT  */
 .product {
-    background-color: #f3f0f0;
+    background-color: #f0f0f0;
     padding: 60px 0 70px;
 }
 

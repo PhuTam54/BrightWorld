@@ -104,6 +104,7 @@
 /* PRODUCT SELECT  */
 .productdetail__select {
     margin: 1rem;
+    margin-left: 10px;
     display: flex;
 }
 
@@ -131,7 +132,7 @@
 .productdetail__select span {
     line-height: 40px;
     margin: 0 8px 0;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .productdetail__select i {
@@ -200,6 +201,11 @@
     text-decoration: none;
     color: white;
     transition: color .3s;
+}
+
+/* BTN DOWNLOAD  */
+.productdetail__btn-download {
+    margin: 0 8px;
 }
 
 /* PRODUCT RELATED  */
