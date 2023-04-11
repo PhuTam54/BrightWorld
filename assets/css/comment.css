@@ -1,0 +1,112 @@
+.comment__wrapper {
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.comment__wrapper h2 {
+    color: var(--purple-color);
+    font-size: 2rem;
+    margin: 1rem auto 0;
+}
+
+.comment__wrapper .form input {
+    background: #222222;
+    color: white;
+    font-size: 15px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.comment__wrapper .form textarea {
+    background: #222222;
+    color: white;
+    font-size: 15px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.comment__wrapper .form .btn {
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    transition: 0.3s all ease;
+}
+
+.comment__wrapper .form .btn:hover {
+    border: 1px solid var(--pink-color);
+    color: #222;
+}
+
+.comment__content {
+    text-align: center;
+    background: #e8e5e5;
+    color: #222;
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.comment__content p {
+    margin-bottom: 15px;
+    width: 450px;
+}
+
+@media (max-width: 739px) {
+    .comment__wrapper {
+        width: 400px;
+        height: 380px;
+    }
+
+    .comment__wrapper h2 {
+        margin: -1rem auto 0;
+    }
+
+    .comment__wrapper .form input {
+        width: 100%;
+    }
+
+    .comment__wrapper .form textarea {
+        width: 100%;
+    }
+
+    .comment__wrapper .form .btn {
+        color: white;
+    }
+
+    .comment__wrapper .form .btn:hover {
+        border: 1px solid var(--pink-color);
+        color: #222;
+    }
+
+    .comment__content {
+        margin: auto;
+        width: 380px;
+    }
+}

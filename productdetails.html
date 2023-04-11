@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="assets/css/productdetail.css">
     <link rel="stylesheet" href="assets/css/productdetails-reponsive.css">
     <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/comment.css">
+
 
 </head>
 
@@ -185,6 +187,7 @@
         </div>
     </header>
 
+    <!-- PRODUCT DETAIL  -->
     <section class="productdetail__contain">
         <div class="productdetail__img">
             <div class="img__main">
@@ -264,6 +267,25 @@
 
     </section>
 
+    <!-- COMMENT  -->
+    <div class="comment__wrapper">
+        <form action="" method="post" class="form">
+            <h2>Feedback</h2>
+            <input type="text" class="name" name="name" placeholder="Name">
+            <br>
+            <textarea name="message" cols="30" rows="10" class="message" placeholder="Message"></textarea>
+            <br>
+            <button type="submit" class="btn" name="post_comment">Post Comment</button>
+        </form>
+    </div>
+
+    <div class="comment__content">
+        <h5>Jonny Dang: BrightWorld is a store that sells the world's top-quality LED lights.</h5>
+            <br>
+        <h5>Benjamin: 5 stars rating.</h5>
+        </div>
+
+    <!-- PRODUCT RELATED  -->
     <section class="productdetail__related">
         <div class="related__title">
             <h4>Related Products</h4>
@@ -692,26 +714,26 @@
                 </form>
 
             </div>
-    </div>
+        </div>
 
-    <!-- ------js for product gallery----- -->
-    <script>
-        var productImg = document.getElementById("productdetail__img");
-        var smallProductImg = document.getElementsByClassName("img-small");
+        <!-- ------js for product gallery----- -->
+        <script>
+            var productImg = document.getElementById("productdetail__img");
+            var smallProductImg = document.getElementsByClassName("img-small");
 
-        smallProductImg[0].onclick = function () {
-            productImg.src = smallProductImg[0].src;
-        }
-        smallProductImg[1].onclick = function () {
-            productImg.src = smallProductImg[1].src;
-        }
-        smallProductImg[2].onclick = function () {
-            productImg.src = smallProductImg[2].src;
-        }
-        smallProductImg[3].onclick = function () {
-            productImg.src = smallProductImg[3].src;
-        } 
-    </script>
+            smallProductImg[0].onclick = function () {
+                productImg.src = smallProductImg[0].src;
+            }
+            smallProductImg[1].onclick = function () {
+                productImg.src = smallProductImg[1].src;
+            }
+            smallProductImg[2].onclick = function () {
+                productImg.src = smallProductImg[2].src;
+            }
+            smallProductImg[3].onclick = function () {
+                productImg.src = smallProductImg[3].src;
+            } 
+        </script>
 
 </body>
 
