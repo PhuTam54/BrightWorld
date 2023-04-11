@@ -8,6 +8,7 @@
     align-items: center;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    margin: 0 auto;
 }
 
 .comment__wrapper h2 {
@@ -71,6 +72,7 @@
     border-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    margin: 0 auto;
 }
 
 .comment__content p {
