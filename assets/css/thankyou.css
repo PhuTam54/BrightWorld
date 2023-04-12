@@ -16,13 +16,13 @@ body {
 }
 
 .thankyou__contain i {
-    color: green;
+    color: rgb(28, 195, 28);
     font-size: 4rem;
     margin-bottom: 8px;
 }
 
 .thankyou__contain h2 {
-    color: green;
+    color: rgb(28, 195, 28);
 }
 
 .thankyou__contain h3 {
