@@ -184,23 +184,43 @@
     </header>
 
     <!-- PAYMENT  -->
-    <div class="container">
-        <div class="left">
-            <h3>BILLING ADDRESS</h3>
-            <form>
-                Full name
-                <input type="text" name="" placeholder="Enter name">
-                Email
-                <input type="text" name="" placeholder="Enter email">
+    <div class="payment__container">
 
-                Address
-                <input type="text" name="" placeholder="Enter address">
+        <div class="payment__left">
+            <h3 class="payment__heading">BILLING ADDRESS</h3>
+            <form action="#" id="signup" method="post">
+                <!-- full name  -->
+                <div class="form-field">
+                    <label for="payment__name">Full name*</label>
+                    <input type="text" id="payment__name" name="" placeholder="Enter name">
+                    <small></small>
+                </div>
 
-                City
-                <input type="text" name="" placeholder="Enter City">
-                <div id="zip">
+                <!-- email  -->
+                <div class="form-field">
+                    <label for="payment__email">Email*</label>
+                    <input type="text" id="payment__email" name="" placeholder="Enter email">
+                    <small></small>
+                </div>
+
+                <!-- address  -->
+                <div class="form-field">
+                    <label for="payment__address">Address*</label>
+                    <input type="text" id="payment__address" name="" placeholder="Enter address">
+                    <small></small>
+                </div>
+
+                <!-- city  -->
+                <div class="form-field">
+                    <label for="payment__city">City*</label>
+                    <input type="text" id="payment__city" name="" placeholder="Enter City">
+                    <small></small>
+                </div>
+
+                <!-- zip  -->
+                <div id="payment__zip">
                     <label>
-                        State
+                        <span class="payment__state">State</span>
                         <select>
                             <option>Choose State..</option>
                             <option>Ha Noi</option>
@@ -209,29 +229,42 @@
                         </select>
                     </label>
                     <label>
-                        Zip code
+                        <span class="payment__zipcode">Zip code</span> 
                         <input type="number" name="" placeholder="Zip code">
                     </label>
                 </div>
             </form>
         </div>
-        <div class="right">
-            <h3>PAYMENT</h3>
-            <form>
+
+        <div class="payment__right">
+            <h3 class="payment__heading">PAYMENT</h3>
+            <form action="#" id="signup" method="post">
+
+                <!-- card  -->
                 Accepted Card <br>
                 <img src="assets/img/card1.png" width="100">
                 <img src="assets/img/card2.png" width="50">
                 <br><br>
 
-                Credit card number
-                <input type="text" name="" placeholder="Enter card number">
+                <!-- card number  -->
+                <div class="form-field">
+                    <label for="payment__card">Credit card number*</label>
+                    <input type="text" id="payment__card" name="" placeholder="Enter card number">
+                    <small></small>
+                </div>
 
-                Exp month
-                <input type="text" name="" placeholder="Enter Month">
-                <div id="zip">
+                <!-- expire month  -->
+                <div class="form-field">
+                    <label for="payment__expmonth">Exp month*</label>
+                    <input type="text" id="payment__expmonth" name="" placeholder="Enter Month">
+                    <small></small>
+                </div>
+
+
+                <div id="payment__zip">
                     <label>
-                        Exp year
-                        <select>
+                        <span class="payment__expyear">Exp year</span> 
+                        <select required>
                             <option>Choose Year..</option>
                             <option>2024</option>
                             <option>2025</option>
@@ -239,15 +272,23 @@
                             <option>2027</option>
                         </select>
                     </label>
-                    <label>
-                        CVV
-                        <input type="number" name="" placeholder="CVV">
-                    </label>
+
+                    <div class="form-field">
+                        <label for="payment__cvv">
+                           <span class="payment__cvv">CVV</span>
+                        </label>
+                        <input type="number" id="payment__cvv" name="" placeholder="CVV">
+                        <small></small>
+                    </div>
                 </div>
+
             </form>
-            <a href="thankyou.html"><button class="checkout" type="submit" name=""
+
+            <a href="thankyou.html"><button class="payment__btn-checkout" type="submit" name=""
                     value="Proceed to Checkout">Checkout</button></a>
+
         </div>
+
     </div>
 
     <!-- FOOTER  -->
@@ -304,7 +345,8 @@
                 <h3>Subscribe Us</h3>
                 <form class="footer__sub" action="#" id="signup" method="post">
                     <div class="form-field">
-                        <input type="email" name="email" id="subscribe-email" placeholder="name@example.com" required><br>
+                        <input type="email" name="email" id="subscribe-email" placeholder="name@example.com"
+                            required><br>
                         <small></small>
                     </div>
                     <button class="js-submit-subscribe" type="submit">Send</button>
@@ -316,6 +358,9 @@
             <p>&copy; Copyright belongs to group 1 "The Time Boys" | Design by <span>Phú Tâm</span></p>
         </div>
     </footer>
+
+    <!-- Valid js  -->
+    <script src="assets/js/paymentValid.js"></script>
 
 </body>
 

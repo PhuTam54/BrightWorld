@@ -1,4 +1,4 @@
-.container{
+.payment__container{
     width: 100%;
 	min-height: 100vh;
 	background: #34495e;
@@ -6,29 +6,77 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: white;
+	background: #f0f0f0;
 	max-width: 800px;
 	min-height: 500px;
 	display: flex;
 	justify-content:space-between;
 	align-items: flex-start;
-	padding: 0.5rem 1.5rem;
-    margin: 150px auto 0px;
+	padding: 150px 1.5rem 2rem;
+    margin: 0 auto;
 }
-.left{
+.payment__left{
 	flex-basis: 50%;
 }
-.right{
+.payment__right{
 	flex-basis: 50%;
 }
-.container form{
+
+.payment__container span {
+	padding-bottom: 40px;
+}
+.payment__name {
+
+}
+
+.payment__email {
+
+}
+
+.payment__address {
+
+}
+
+.payment__city {
+
+}
+
+.payment__zip {
+
+}
+
+.payment__state {
+
+}
+
+.payment__zipcode {
+
+}
+
+.payment__card {
+
+}
+
+.payment__expmonth {
+
+}
+
+.payment__expyear {
+
+}
+
+.payment__cvv {
+
+}
+
+.payment__container form{
 	padding: 1rem;
 }
 
-h3{
+.payment__heading{
 	margin-top: 1rem;
 	color: var(--purple-color);
-	}
+}
 
 form input[type="text"]{
 	width: 100%;
@@ -41,18 +89,23 @@ form img {
     cursor: pointer;
 }
 
-#zip{
+#payment__zip{
 	display: flex;
 	margin-top: 0.5rem;
 }
-#zip select{
+
+#payment__zip select{
 	padding: 0.5rem 0.7rem;
+	outline: none;
 }
-#zip input[type="number"]{
+
+#payment__zip input[type="number"]{
 	padding: 0.5rem 0.7rem;
-	margin-left: 5px;	
+	margin-left: 5px;
+	outline: none;
 }
-.checkout[type="submit"]{
+
+.payment__btn-checkout[type="submit"]{
 	width: 100%;
 	padding: 0.7rem 1.5rem;
 	color: white;
@@ -61,17 +114,31 @@ form img {
 	cursor: pointer;
 }
 
-.checkout[type="submit"]:hover{
+.payment__btn-checkout[type="submit"]:hover{
 	color: black;
 }
 
+.error {
+	margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 770px){
-	.container{
+	.payment__container{
 		flex-direction: column;
-        margin: 130px auto 30px;
+		padding: 130px 1.5rem 2rem;
+		margin: 0 auto;
 	}
+
 	body{
 		overflow-x: hidden;
+	}
+
+	.payment__container .payment__heading{
+		font-size: 1.2rem;
+	}
+
+	.form-field label {
+		font-size: 1.1rem;
 	}
 }
 
