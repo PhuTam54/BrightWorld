@@ -274,21 +274,80 @@
 
     <!-- COMMENT  -->
     <div class="comment__wrapper">
-        <form method="post" class="form">
-            <h2>Feedback</h2>
-            <input type="text" class="name" name="name" placeholder="Name">
-            <br>
-            <textarea name="message" cols="30" rows="10" class="message" placeholder="Message"></textarea>
-            <br>
-            <button type="submit" class="btn" name="post_comment">Post Comment</button>
-        </form>
+
+        <h2 class="comment__heading">Feedback</h2>
+
+        <div class="comment__content">
+
+            <div class="content__avatar">
+                <div class="account">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="content__review">
+                <h4 class="review__name">Jonny Dang</h4>
+
+                <div class="productdetail__action-rating">
+                    <i class="fa-solid fa-star gold-star"></i>
+                    <i class="fa-solid fa-star gold-star"></i>
+                    <i class="fa-solid fa-star gold-star"></i>
+                    <i class="fa-solid fa-star gold-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                
+                <h5 class="review__content">
+                    BrightWorld is a store that sells the world's top-quality LED lights.
+                </h5>
+            </div>
+        </div>
+        <div class="comment__content-2">
+
+            <div class="content__avatar">
+                <div class="account">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="content__review">
+                <h4 class="review__name">Benjamin</h4>
+
+                <div class="productdetail__action-rating">
+                    <i class="fa-solid fa-star gold-star"></i>
+                    <i class="fa-solid fa-star gold-star"></i>
+                    <i class="fa-solid fa-star gold-star"></i>
+                    <i class="fa-solid fa-star gold-star"></i>
+                    <i class="fa-solid fa-star gold-star"></i>
+                </div>
+                
+                <h5 class="review__content">
+                    5 stars rating.
+                </h5>
+            </div>
+        </div>
+
+        <div class="comment__rating">
+            <span>Your comment</span>
+
+            <div class="productdetail__action-rating">
+                <i class="fa-solid fa-star gold-star"></i>
+                <i class="fa-solid fa-star gold-star"></i>
+                <i class="fa-solid fa-star gold-star"></i>
+                <i class="fa-solid fa-star gold-star"></i>
+                <i class="fa-solid fa-star gold-star"></i>
+            </div>
+
+            <form method="post" class="comment__form">
+                <input type="text" class="name" name="name" placeholder="Name">
+                <br>
+                <textarea name="message" cols="30" rows="10" class="message" placeholder="Message"></textarea>
+                <br>
+                <button type="submit" class="btn" name="post_comment">Post Comment</button>
+            </form>
+        </div>
+        
     </div>
 
-    <div class="comment__content">
-        <h5>Jonny Dang: BrightWorld is a store that sells the world's top-quality LED lights.</h5>
-            <br>
-        <h5>Benjamin: 5 stars rating.</h5>
-        </div>
 
     <!-- PRODUCT RELATED  -->
     <section class="productdetail__related">
