@@ -59,6 +59,10 @@
     font-size: .85rem;
 }
 
+.fa-regular:hover {
+    color: #fdce3f;
+}
+
 .review__content {
     font-size: .8rem;
     font-weight: 400;
