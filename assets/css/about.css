@@ -1,12 +1,14 @@
 .char{
 	display: flex;
-	margin-top: 150px;
-	margin-bottom:100px;
+	padding-top: 150px;
+	padding-bottom:100px;
+    background-color: #f3f0f0;
 }
 .about_us .about h1{
 	text-align: center;
-	font-size: 48px;
-	margin-bottom: 40px
+	font-size: 2.5rem;
+	margin-bottom: 40px;
+    color: var(--purple-color);
 }
 .about_us .about p{
 	margin-bottom: 50px;
@@ -17,14 +19,55 @@
 	padding-left: 30px;
 	padding-right: 25px;
 }
-.about_us .team h2{
-	margin-top: 50px;
-}
+
 .about_us .history h2{
 	margin-bottom: 40px;
 }
-.about_us .team p{
-	padding-left: 30px;
-	padding-right: 25px;
+
+.char2{
+    display: flex;
+	padding-bottom:100px;
+    background-color: #f3f0f0;
 }
 
+.char2 h2 {
+    font-size: 2.5rem;
+    color: var(--purple-color);
+}
+
+.images img {
+   padding-left: 25px;
+}
+
+.image img{
+    padding-right: 25px;
+}
+@media (max-width: 739px) {
+    .char {
+        display: block;
+        padding-bottom:40px;
+    }
+    .about_us .about h1{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .about_us .about p{
+        font-size: .9rem;
+    }
+
+    .about_us .history p{
+        padding-left: auto;
+        padding-right: auto;
+        font-size: .9rem;
+    }
+
+    .about_us .history h2{
+        margin-bottom: 20px;
+    }
+    
+    .char h2 {
+        font-size: 2rem;
+        color: var(--purple-color);
+    }
+}
