@@ -1,66 +1,148 @@
-.char{
-	display: flex;
-	padding-top: 150px;
-	padding-bottom:100px;
+.about__contain {
+    padding-top: 180px;
+    padding-bottom: 50px;
     background-color: #f0f0f0;
 }
-.about_us .about h1{
-	text-align: center;
-	font-size: 2.5rem;
-	margin-bottom: 40px;
-    color: var(--purple-color);
-}
-.about_us .about p{
-	margin-bottom: 50px;
-	padding-left: 30px;
-	padding-right: 25px;
-}
-.about_us .history p{
-	padding-left: 30px;
-	padding-right: 25px;
-}
-.about_us .team h2{
-	margin-top: 50px;
-}
-.about_us .history h2{
-	margin-bottom: 40px;
-}
-.about_us .team p{
-	padding-left: 30px;
-	padding-right: 25px;
+
+.about__info {
+    display: flex;
+    width: 80%;
+    margin: 0 auto 2rem;
+    justify-content: space-between;
 }
 
-.char h2 {
+.info__text {
+    width: 700px;
+}
+
+.info__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    margin-left: 0rem;
+    border-radius: 8px;
+}
+
+.about__heading {
+    text-align: left;
+    margin-left: 25rem;
+}
+
+.about__contain h2 {
     font-size: 2.5rem;
+    margin-bottom: 40px;
     color: var(--purple-color);
+}
+
+.about__contain p {
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.about__history {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.about__history p {
+    margin-bottom: 0rem;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .about__contain {
+        padding-top: 160px;
+    }
+    
+    .about__info {
+        margin: 0 3rem 3rem;
+    }
+    
+    .info__text {
+        width: 500px;
+    }
+    
+    .info__img {
+        width: 40%;
+        height: 350px;
+        margin-left: 2rem;
+        border-radius: 8px;
+    }
+    
+    .about__heading {
+        margin-left: 10rem;
+    }
+    
+    .about__contain h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about__contain p {
+        margin-bottom: 0rem;
+    }
+
+    .about__history {
+        width: 80%;
+        padding: 2rem;
+    }
 }
 
 @media (max-width: 739px) {
-    .char {
+    .about__contain {
+        padding-top: 150px;
+        padding-bottom: 30px;
+    }
+
+    .about__info {
         display: block;
-        padding-bottom:40px;
-    }
-    .about_us .about h1{
-        font-size: 2rem;
-        margin-bottom: 20px;
+        margin: 0 1rem 2rem 2rem;
     }
 
-    .about_us .about p{
-        font-size: .9rem;
+    .info__text {
+        width: 100%;
     }
 
-    .about_us .history p{
-        padding-left: auto;
-        padding-right: auto;
-        font-size: .9rem;
+    .info__img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 250px;
+        margin: 1rem 0 0rem;
     }
 
-    .about_us .history h2{
-        margin-bottom: 20px;
+    .about__heading {
+        text-align: center;
+        margin-left: 0;
     }
-    
-    .char h2 {
-        font-size: 2rem;
-        color: var(--purple-color);
+
+    .about__contain h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .about__contain p {
+        line-height: 1.5rem;
+        font-size: .75rem;
+        margin-bottom: 0;
+    }
+
+    .about__history {
+        width: 90%;
+        padding: 1.3rem;
+    }
+
+    .about__history p {
+        margin-bottom: -1.5rem;
+    }
+
+    .about__history p:last-child {
+        margin-bottom: 0;
     }
 }

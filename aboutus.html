@@ -184,27 +184,38 @@
     </header>
 
     <!--About Us-->
-    <div class="char">
-        <div class="aboutUS">
-            <section class="about_us">
-                <div class="about">
-                    <h1>About Us</h1>
-                    <p>Bright World is the world leader in professional ,residential and lighting systems for internet of Things technology. Our energy-efficient lighting product, systems and services enable our customers to enjoy superior light quality, safer and more comfotable lives for residents, and high productivity. For business and a better living enviroment for the city</p>
-                    <p>With 2020 sales of EUR 6.5 million, nearly 39,000 employees and presemce in more than 60 countries, we have unlocked the outstanding potential of lighting globally to brighten lives and birghten world pretty.</p>
-                </div>
-            </section>
+    <div class="about__contain">
+        <h2 class="about__heading">About Us</h2>
+        <div class="about__info">
+            <div class="info__text">
+                <p>Bright World is the world leader in professional ,residential and lighting systems for internet of
+                    Things technology. Our energy-efficient lighting product, systems and services enable our customers
+                    to enjoy superior light quality, safer and more comfotable lives for residents, and high
+                    productivity. For business and a better living enviroment for the city</p> <br>
+                <p>With 2020 sales of EUR 6.5 million, nearly 39,000 employees and presemce in more than 60 countries,
+                    we have unlocked the outstanding potential of lighting globally to brighten lives and birghten world
+                    pretty.</p>
+            </div>
+            <div class="info__img" style="background-image: url(assets/img/aboutus.jpg);">
+                
+            </div>
         </div>
-        <div class="aboutUS">
-            <section class="about_us">
-                <div class="history">
-                    <h2>Our History</h2>
-                    <p>1. "A company with a clear purpose." Our aim is to unlock truly outstanding lighting potentials for a brighter life and a more beautiful word. We achieve this though a spirit of always living and working according to our values, innovation and passion for sustainable development and a desire to transform people's lives.</p>
-                    <br><br>
-                    <p>2. "Improving Today and Tomorrow." Over the pass 120 years, we have pioneered many groundbreaking innovations in the lighting industry and have been the driving force for many innovative innovations.</p>
-                    <br><br>
-                    <p>3. "Knowledge shines for you." We provide you with comprehensive materials in the field of lighting for your reference.</p>
-                </div>
-            </section>
+        
+        <div class="about__history">
+            <h2>Our History</h2>
+            <div class="history">
+                <p>1. "A company with a clear purpose." Our aim is to unlock truly outstanding lighting potentials
+                    for a brighter life and a more beautiful word. We achieve this though a spirit of always living
+                    and working according to our values, innovation and passion for sustainable development and a
+                    desire to transform people's lives.</p>
+                <br><br>
+                <p>2. "Improving Today and Tomorrow." Over the pass 120 years, we have pioneered many groundbreaking
+                    innovations in the lighting industry and have been the driving force for many innovative
+                    innovations.</p>
+                <br><br>
+                <p>3. "Knowledge shines for you." We provide you with comprehensive materials in the field of
+                    lighting for your reference.</p>
+            </div>
         </div>
     </div>
 
@@ -322,7 +333,8 @@
                 <h3>Subscribe Us</h3>
                 <form class="footer__sub" action="#" id="signup" method="post">
                     <div class="form-field">
-                        <input type="email" name="email" id="subscribe-email" placeholder="name@example.com" required><br>
+                        <input type="email" name="email" id="subscribe-email" placeholder="name@example.com"
+                            required><br>
                         <small></small>
                     </div>
                     <button class="js-submit-subscribe" type="submit">Send</button>
@@ -337,37 +349,37 @@
 
     <!-- Jquery hỗ trợ chạy hiệu ứng của
             các thư viện animation -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-        <!-- Jquery Waypoints: Hàm hỗ trợ -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-            integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-        <!-- CountUp JS  -->
-        <script src="assets/js/jquery.countup.js"></script>
-        <script>
-            $('.counter').countUp();
-        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <!-- OWL CAROUSEL -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script>
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                nav: true,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    }
+    <!-- Jquery Waypoints: Hàm hỗ trợ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CountUp JS  -->
+    <script src="assets/js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+
+    <!-- OWL CAROUSEL -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
                 }
-            })
-        </script>
+            }
+        })
+    </script>
 </body>
 
 </html>
