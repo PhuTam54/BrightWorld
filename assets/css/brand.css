@@ -1,186 +1,213 @@
-.led_light {
-    padding-top: 150px;
+.brand__container {
+    padding: 180px 0 50px;
     background-color: #f0f0f0;
 }
 
-.led_light h1 {
+.brand__top {
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.brand__heading {
     color: var(--purple-color);
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
 }
 
-.head {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 20px;
-    margin-bottom: 20px;
+.brand__img {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
 }
 
-.philips h1 {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 25px;
-    margin-bottom: 10px;
+.brand__img::-webkit-scrollbar {
+    display: none;
 }
 
-.philips p {
-    padding-left: 50px;
-    padding-right: 50px;
+.brand__img img {
+    height: 70px;
+    margin: 1rem;
 }
 
-img {
-    width: 400px;
-    padding-left: 50px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+.brand__body {
+    width: 90%;
+    margin: -1rem auto 0;
+    margin-bottom: 2rem;
 }
 
-.panasonic h1 {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 25px;
-    margin-bottom: 10px;
+.brand__info {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-.panasonic p {
-    padding-left: 50px;
-    padding-right: 50px;
+.brand__info:first-child {
+    margin-bottom: 2rem;
 }
 
-.cree h1 {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 25px;
-    margin-bottom: 10px;
+.brand__info .info__heading {
+    color: var(--purple-color);
+    font-size: 1.6rem;
 }
 
-.cree p {
-    padding-left: 50px;
-    padding-right: 50px;
+.brand__info .info__text {
+    line-height: 2rem;
+    font-size: 1.2rem;
 }
 
-.sylvania h1 {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 25px;
-    margin-bottom: 10px;
+/* related  */
+.brand__related {
+    margin: 1rem 0;
 }
 
-.sylvania p {
-    padding-left: 50px;
-    padding-right: 50px;
+.related__title {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0 2rem;
 }
 
-.osram h1 {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 25px;
-    margin-bottom: 10px;
+.related__title h4 {
+    color: var(--purple-color);
+    font-size: 1.3rem;
 }
 
-.osram p {
-    padding-left: 50px;
-    padding-right: 50px;
+.related__title a {
+    text-decoration: none;
+    color: var(--purple-color);
+    transition: all .3s;
 }
 
-.zumtobel h1 {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-size: 25px;
-    margin-bottom: 10px;
+.related__title a:hover {
+    color: var(--pink-color);
 }
 
-.zumtobel p {
-    padding-left: 50px;
-    padding-right: 50px;
+/* tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .brand__container {
+        padding: 150px 0 20px;
+    }
+
+    .brand__top {
+        width: 90%;
+        margin: 0 auto;
+        height: 350px;
+    }
+
+    .brand__heading {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .brand__img {
+        grid-template-columns: repeat(4, 31%);
+        padding: .2rem;
+    }
+
+    .brand__img img {
+        height: 60px;
+    }
+
+    .brand__body {
+        width: 90%;
+        margin: -4rem auto 0;
+    }
+
+    .brand__info .info__heading {
+        font-size: 1.3rem;
+    }
+
+    .brand__info .info__text {
+        line-height: 1.6rem;
+        font-size: 1rem;
+    }
+
+    /* related  */
+    .brand__related {
+        margin: 1rem 0;
+    }
+
+    .related__title {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0 1rem;
+    }
+
+    .related__title h4 {
+        font-size: 1.2rem;
+    }
+
 }
 
-@media (max-width: 739px) { 
-    .led_light p {
+/* mobile  */
+@media (max-width: 739px) {
+    .brand__container {
+        padding: 140px 0 20px;
+    }
+
+    .brand__top {
+        height: 300px;
+        width: 95%;
+    }
+
+    .brand__heading {
+        font-size: 1.6rem;
+        margin-bottom: .9rem;
+    }
+
+    .brand__img {
+        grid-template-columns: repeat(4, 40%);
+        padding: 0;
+    }
+
+    .brand__img img {
+        height: 40px;
+    }
+
+    .brand__body {
+        width: 95%;
+        margin: -6rem auto 0;
+    }
+
+    .brand__info {
+        padding: 1rem;
+    }
+
+    .brand__info:first-child {
+        margin-bottom: 0rem;
+    }
+
+    .brand__info .info__heading {
+        font-size: 1.1rem;
+    }
+
+    .brand__info .info__text {
+        line-height: 1.5rem;
+        font-size: .8rem;
+    }
+
+    /* related  */
+    .brand__related {
+        margin: 1rem 0;
+    }
+
+    .related__title {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0 1rem;
+    }
+
+    .related__title h4 {
+        font-size: 1rem;
+    }
+
+    .related__title a {
         font-size: .9rem;
     }
-
-    .head {
-        padding-left: 20px;
-        padding-right: 0px;
-        font-size: .9rem;
-    }
-    
-    .philips h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .philips p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    img {
-        width: 300px;
-        padding-left: 20px;
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
-    
-    .panasonic h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .panasonic p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .cree h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .cree p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .sylvania h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .sylvania p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .osram h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .osram p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .zumtobel h1 {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    
-    .zumtobel p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
 }
