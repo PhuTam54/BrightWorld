@@ -86,6 +86,7 @@ TABLET IPAD -- TABLET IPAD -- IPAD TABLET -- IPAD TABLET -- TABLET IPAD -- TABLE
     /* Header  */
     /* Logo */
     .header__logo {
+        height: 3.8rem;
         margin: 0 0 0 1.5rem;
     }
 
@@ -471,7 +472,6 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
 
     .header__logo {
         height: 2.5rem;
-        /* margin-left: -10px; */
         margin: 0;
     }
 

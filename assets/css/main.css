@@ -64,7 +64,7 @@ header {
 
 /* HEADER SEARCH */
 .header__logo {
-    height: 4rem;
+    height: 4.4rem;
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 1.9rem;
@@ -88,8 +88,8 @@ header {
 
 .header__body p {
     color: white;
-    font-size: 1.9rem;
-    margin: .8rem 0 0 3rem
+    font-size: 1.7rem;
+    margin: 1.7rem 0 0 3rem
 }
 
 .header__body span {
