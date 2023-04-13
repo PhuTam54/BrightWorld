@@ -68,7 +68,7 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 1.9rem;
-    margin-bottom: .3rem;
+    margin-bottom: 1.5rem;
     flex-shrink: 0;
 }
 
@@ -995,6 +995,12 @@ header {
     text-align: center;
 }
 
+.item__link {
+    text-decoration: none;
+    color: #212529;
+    transition: all .3s;
+}
+
 .contact__info i {
     font-size: 2rem;
     color: var(--purple-color);
@@ -1024,6 +1030,17 @@ footer {
 .footer__item {
     width: 25%;
     padding: 0 20px;
+}
+
+.footer__item-link {
+    text-decoration: none;
+    color: white;
+    transition: all .3s;
+}
+
+.footer__item-link:hover,
+.item__link:hover {
+    color: var(--pink-color);
 }
 
 .footer__item h3 {

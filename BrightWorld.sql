@@ -110,7 +110,7 @@ INSERT INTO Product VALUES
 Laser power: (green light 50mW, red light 100mW)
 LED light source: red, green, blue
 Power adapter: DC5V/2A
-Use environment: 10-30°C
+Use environment: 10-30ï¿½C
 Control mode: manual, remote control
 Working mode: voice control, automatic, strobe
 Product size: 155*127*60mm
@@ -126,7 +126,7 @@ Material: PVC anti-UV
 Lifespan: 30,000h', 'unit' , '15.99', '260', 4),
 (3, '18W LED Bulb - SBNL518', 'Power: 18W
 Cap type: E27
-Dimensions xH (mm): 105×175
+Dimensions xH (mm): 105ï¿½175
 Voltage: 220V/50Hz
 Light: 3000K/6500K
 Luminance: 2100lm

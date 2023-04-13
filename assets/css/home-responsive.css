@@ -467,11 +467,11 @@ MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIELE MOBILE MOBIE
     /* Logo */
     .header__logo p {
         font-size: 1.1rem;
-        margin: .8rem 0 0 1.8rem;
+        margin: 1rem 0 0 2.2rem;
     }
 
     .header__logo {
-        height: 2.5rem;
+        height: 3rem;
         margin: 0;
     }
 
