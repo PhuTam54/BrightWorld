@@ -7,13 +7,13 @@
 	justify-content: center;
 	align-items: center;
 	background: #f0f0f0;
-	max-width: 800px;
+	max-width: 1000px;
 	min-height: 500px;
 	display: flex;
 	justify-content:space-between;
 	align-items: flex-start;
-	padding: 150px 1.5rem 2rem;
-    margin: 0 auto;
+	padding: 1rem 1.5rem 1rem;
+    margin: 11rem auto 3rem;
 }
 .payment__left{
 	flex-basis: 50%;
@@ -123,7 +123,13 @@ form img {
 	margin-bottom: 5px;
 }
 
-@media only screen and (max-width: 770px){
+@media (min-width: 740px) and (max-width: 1023px) {
+	.payment__container{
+		/* max-width: 650px; */
+	}
+}
+
+@media only screen and (max-width: 739px){
 	.payment__container{
 		flex-direction: column;
 		padding: 130px 1.5rem 2rem;
