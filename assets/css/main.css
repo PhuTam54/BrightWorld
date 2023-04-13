@@ -336,8 +336,8 @@ header {
 }
 
 .cartdetails .cart-list__heading {
-    margin: 2rem 1rem 1rem;
-    font-size: 1.6rem;
+    margin: 1rem 1rem 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--purple-color);
 }
