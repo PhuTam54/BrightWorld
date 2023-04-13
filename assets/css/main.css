@@ -886,10 +886,8 @@ header {
 
 /* TESTIMONIALS  */
 .testimonials {
-    background-color: var(--purple-color);
     background-image: url(../img/crs6.jpg);
     background-size: contain;
-    /* background-repeat: no-repeat; */
     padding: 70px 0;
 }
 
