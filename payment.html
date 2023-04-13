@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
     <title>BrightWorld</title>
 
     <!-- FONT AWESOME -->
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="assets/css/home-responsive.css">
     <link rel="stylesheet" href="assets/css/product-responsive.css">
     <link rel="stylesheet" href="assets/css/payment.css">
+    <link rel="stylesheet" href="assets/css/thankyou.css">
 
 </head>
 
@@ -87,7 +88,7 @@
 
                 <input type="checkbox" hidden id="mobile-search-checkbox" class="header__mobile-checkbox">
 
-                <div class="header__logo" style="background-image: url(assets/img/logo.png);">
+                <div class="header__logo" style="background-image: url(assets/img/logo.svg);">
                     <p><span>.</span> Bright<span>World</span></p>
                 </div>
 
@@ -229,7 +230,7 @@
                         </select>
                     </label>
                     <label>
-                        <span class="payment__zipcode">Zip code</span> 
+                        <span class="payment__zipcode">Zip code</span>
                         <input type="number" name="" placeholder="Zip code">
                     </label>
                 </div>
@@ -263,7 +264,7 @@
 
                 <div id="payment__zip">
                     <label>
-                        <span class="payment__expyear">Exp year</span> 
+                        <span class="payment__expyear">Exp year</span>
                         <select required>
                             <option>Choose Year..</option>
                             <option>2024</option>
@@ -275,7 +276,7 @@
 
                     <div class="form-field">
                         <label for="payment__cvv">
-                           <span class="payment__cvv">CVV</span>
+                            <span class="payment__cvv">CVV</span>
                         </label>
                         <input type="number" id="payment__cvv" name="" placeholder="CVV">
                         <small></small>
@@ -284,12 +285,33 @@
 
             </form>
 
-            <a href="thankyou.html"><button class="payment__btn-checkout" type="submit" name=""
-                    value="Proceed to Checkout">Checkout</button></a>
+            <button class="payment__btn-checkout payment__btn-popup" type="submit" name=""
+                    value="Proceed to Checkout">Checkout</button>
 
         </div>
 
     </div>
+
+    <!-- THANK YOU  -->
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+
+        <div class="modal__body">
+            <section class="thankyou">
+                <span class="thankyou-close"><i class="fa-solid fa-xmark"></i></span>
+                <div class="thankyou__contain">
+                    <i class="fa-solid fa-check"></i>
+                    <h2>Thank You!</h2>
+                    <h3>Your order has been successfully paid. <br> Have a nice day.</h3>
+                    <blockquote>"Your satisfaction is our pleasure"</blockquote>
+                    <a href="index.html"><button>Go to HomePage</button></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
 
     <!-- FOOTER  -->
     <footer>
@@ -361,6 +383,7 @@
 
     <!-- Valid js  -->
     <script src="assets/js/paymentValid.js"></script>
+
 
 </body>
 

@@ -1,10 +1,6 @@
-body {
-    background-color: #f0f0f0;
-}
-
 .thankyou {
+    position: relative;
     display: flex;
-    margin: 200px auto 80px;
     width: 800px;
     height: 400px;
     background-color: white;
@@ -15,14 +11,44 @@ body {
     box-shadow: 0 0 8px rgba(0, 0, 0, .1);
 }
 
+.modal {
+    transform: scale(0);
+    transition: transform .3s;
+}
+
+.modal.active-popup {
+    transform: scale(1);
+}
+
+.thankyou-close {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: var(--purple-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 3px 0 5px;
+    transition: all .3s;
+}
+
+.thankyou-close:hover {
+    background-color: var(--pink-color);
+}
+
 .thankyou__contain i {
     color: rgb(28, 195, 28);
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin-bottom: 8px;
 }
 
 .thankyou__contain h2 {
     color: rgb(28, 195, 28);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .thankyou__contain h3 {
@@ -31,7 +57,7 @@ body {
 
 .thankyou__contain blockquote {
     color: var(--purple-color);
-    margin-top: 10px;
+    margin: 10px 0 20px;
 }
 
 /* Tablet  */
@@ -45,8 +71,7 @@ body {
 @media (max-width: 739px) {
     .thankyou {
         width: 100%;
-        margin: 60px auto -30px;
-        background-color: #f0f0f0;
+        height: 300px;
     }
 
     .thankyou__contain i {
@@ -60,6 +85,7 @@ body {
 
     .thankyou__contain h3 {
         font-size: 1rem;
+        padding: 0 20px
     }
 
     .thankyou__contain blockquote {

@@ -148,6 +148,9 @@ const showSuccess = (input) => {
     error.textContent = ''
 }
 
+// <!-- js for modal  -->
+const modalMain = document.querySelector('.modal');
+
 // SUBMIT CONTACT
 const paymentForm = document.querySelector('.payment__btn-checkout')
 // Eventlistener
@@ -172,6 +175,13 @@ paymentForm.addEventListener('click', function (e) {
 
     // submit to the server if the contact form is valid
     if (isPaymentValid) {
-        alert('Your information has been submitted!');
+        modalMain.classList.add('active-popup');
     }
 })
+
+// js for close thankyou 
+const thankyouClose = document.querySelector('.thankyou-close');
+
+thankyouClose.addEventListener('click', () => {
+    modalMain.classList.remove('active-popup');
+});
