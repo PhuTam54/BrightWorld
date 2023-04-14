@@ -139,6 +139,12 @@
         margin: 1rem 0;
     }
 
+    .product__content {
+        grid-template-columns: repeat(4, 30%);
+        gap: 25px 20px;
+        width: 100%;
+    }
+
     .related__title {
         display: flex;
         justify-content: space-between;
@@ -199,6 +205,13 @@
     }
 
     /* related  */
+
+    .product__content {
+        grid-template-columns: repeat(4, 43%);
+        gap: 25px 20px;
+        width: 100%;
+    }
+
     .brand__related {
         margin: 1rem 0;
     }
